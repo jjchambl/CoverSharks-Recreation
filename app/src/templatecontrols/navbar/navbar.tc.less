@@ -6,44 +6,61 @@
     [plat-control="navbar"] {
 
     }
-}
-.navbar {
-    // .flex-vertical-center();
-    // .justify-content(flex-end);
-    height: 3.2em;
-    width: 100%;
-    background-color: #ffffff;
-    color: gray;
-    padding: 0 .5em;
-    
-}
-.navbar-left {
-    position: absolute;
-    text-align: left;
-    width: 65px;    
-}
-.navbar-right {
-    position: absolute;
-    width: 100%;
-    text-align: right;
-    .nav-links {
-        margin: 0;
-        padding: 0;        
+    .navbar {
+        // .flex-vertical-center();
+        // .justify-content(flex-end);
+        height: 3.2em;
+        width: 100%;
+        background-color: #ffffff;
+        color: gray;
+        padding: 0 .5em;
+        
     }
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        font-family: WorkSans-SemiBold;
-        text-transform: uppercase;
-        li {
-            display: inline-block;
-            padding: 0 .5em;
-            height: 3.2em;
-            line-height: 3.2em;
-            vertical-align: middle;
-            box-sizing: border-box;
-            border: 2px solid black;
+    .navbar-left {
+        position: absolute;
+        text-align: left;
+        height: 3.2em;
+        width: 65px;
+        img {
+            height: 2.7em;
+            padding: .3em 0 .3em 0;
+        }    
+    }
+    .navbar-right {
+        // position: absolute;
+        width: 100%;
+        text-align: right;
+        height: 3.2em;
+        .nav-links {
+            position: absolute;
+            width: 65%;
+            margin: 0;
+            padding: 0;        
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                font-family: WorkSans-SemiBold;
+                text-transform: uppercase;
+                li {
+                    display: inline-block;
+                    padding: 0 .5em;
+                    height: 3.2em;
+                    line-height: 3.2em;
+                    vertical-align: middle;
+                    box-sizing: border-box;
+                    border: 2px solid transparent;
+                }        
+            }
+        }
+        .social-links {
+            float: right;
+            width: 120px;
+            background-color: #f2f3f4;
+            img {                
+                height: 2.7em;
+                padding: .5em;
+            }
         }
     }
 }
