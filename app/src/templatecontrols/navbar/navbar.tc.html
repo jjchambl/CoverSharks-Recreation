@@ -1,21 +1,33 @@
 <div class="navbar">
-    <div class="navbar-left">
-        <img src="images/home_assets/logo-color.svg">
-    </div>
-    <div class="navbar-right">
-        <div class="nav-links">
-            <ul>
-                <li><plat-link plat-options="{ view: 'howtoplay', isUrl: true }">How to Play</plat-link></li>
-                <li><plat-link plat-options="{ view: 'about', isUrl: true }">About</plat-link></li>
-                <li><plat-link plat-options="{ view: 'promotions', isUrl: true}">Promotions</plat-link></li>
-            </ul>
+    <!--<div class="navbar-left">-->
+    <div class="row">
+        <div class="col-tab-2 hide-on-phb">
+            <div class="nav-logo">
+                <img src="images/home_assets/logo-color.svg">
+            </div>
         </div>
-        <div class="social-links">
-            <img src="images/home_assets/fb-grey.svg">
-            <img src="images/home_assets/twitter-grey.svg">            
+    
+    <!--</div>-->
+    <!--<div class="navbar-right">-->
+        <div class="col-tab-6 col-tab-offset-2 hide-on-phb">
+            <div class="nav-links">
+                <ul>
+                    <li><plat-link plat-options="{ view: 'howtoplay', isUrl: true }">How to Play</plat-link></li>
+                    <li><plat-link plat-options="{ view: 'about', isUrl: true }">About</plat-link></li>
+                    <li><plat-link plat-options="{ view: 'promotions', isUrl: true}">Promotions</plat-link></li>
+                </ul>
+            </div>
         </div>
+        <div class="col-tab-2 hide-on-phb">
+            <div class="social-links">
+                <img src="images/home_assets/fb-grey.svg">
+                <img src="images/home_assets/twitter-grey.svg">
+            </div>
+        </div>
+        
         <!--<plat-drawer-controller>
             |||
         </plat-drawer-controller>-->
+    <!--</div>-->
     </div>
 </div>
