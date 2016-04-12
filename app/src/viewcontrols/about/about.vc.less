@@ -8,7 +8,7 @@
     }
 }
 
-.header {
+.aboutHeader {
     height: 17em;
     background-image: url('/images/about_assets/assets/about-hero.jpg');
     background-size: cover;
@@ -23,6 +23,7 @@
 
 .teamIntro {
     text-align: center;
+    margin-bottom: 3em;
     h1 {
         color: #00b786;
     }
@@ -41,38 +42,69 @@
     }
 }
 
-.origin h3 {
-    color: #9e9f9e;
+.origin {
+    padding-left: 0.5em;
+    h3 {
+        color: #9e9f9e;
+        margin-top: 0.25em;
+        margin-bottom: 0.25em;
+    }
+    h2 {
+        color: #343534;
+        padding-top: 0.1em;
+        margin-bottom: 0.25em;
+    }
+}
+
+.logo {
+    padding-right: 0.5em;
+    
+    img {
+        width: 100%;
+        max-width: 22em;
+    }
 }
 
 .subscribe {
-    background-color: #2c8eb5;
+    background-color: #3798c5;
     height: 9em;
     text-align: center;
     p {
         color: white;
+        margin-bottom: 0.5em;
     }
 }
 
 
 .team {
     background-color: #f2f1f0;
-    h3 {
-        color: white;
-        text-align: center;
-    }
-    h5 {
-       color: white;
-       text-align: center; 
-    }
 }
 
 .employee {
-    border-radius: 0.5em;
+    border-radius: 2em;
+    position: relative;
+    padding-bottom: 4em;
+    p {
+        padding: 1em;
+    }
 }
 
 .jobTitle {
-    background-color: #2c8eb5;
+    background-color: #3798c5;
+    h3 {
+        color: white;
+        text-align: center;
+        padding-top: 0.2em;
+        margin-bottom: 0;
+        padding-bottom: 0.1em
+    }
+    h4 {
+        color: white;
+        text-align: center;
+        margin-bottom: 0;
+        padding-bottom: 0.3em;
+        margin-top: 0.1em;
+    }
 }
 
 .resume {
@@ -95,5 +127,17 @@
     border-radius: 0.5em;
     display: inline-block;
     height: 2.5em;
+}
+
+.headshot {
+    position: absolute;
+    top: -1.7em;
+    left: -4em;
+    img {
+        height: auto;
+        width: auto;
+        max-height: 7em;
+        max-width: 7em;
+    }
 }
 
