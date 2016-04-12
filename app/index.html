@@ -10,8 +10,24 @@
     </head>
     <body>
         <div class="app">
+            <navbar></navbar>
             <plat-viewport></plat-viewport>
+            <footer></footer>
         </div>
+        <plat-drawer class="drawer"  plat-options="{ position: 'right' }">
+            <plat-link plat-options="{ view: '', isUrl: true }">
+                <span>Home</span>    
+            </plat-link>
+            <plat-link plat-options="{ view: '/howtoplay', isUrl: true }">
+                <span>How to Play</span>
+            </plat-link>
+            <plat-link plat-options="{ view: '/about', isUrl: true }">
+                <span>About</span>
+            </plat-link>
+            <plat-link plat-options="{ view: '/promotions', isUrl: true }">
+                <span>Promotions</span>
+            </plat-link>
+        </plat-drawer>
         <script type="text/javascript" src="dist/app.js"></script>
     </body>
 </html>
