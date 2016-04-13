@@ -1,7 +1,7 @@
 <div class="container">
-    <div class="data">
+ <div class="data">
         <div class="row">
-            <div class="col-tab-4 col-tab-offset-1 col-phb-10 col-phb-offset-1">
+            <div class="col-dsk-4 col-dsk-offset-1 col-tab-10 col-tab-offset-1">
                 <h1>Are you in?</h1>
                 <p class="hide-on-phb">Data, analytics, skill, and strategy. All in the ultimate in-game experience. CoverSharks is primed to be the industry pioneer in a new genre
                     of game play...Team Fantasy Sports.
@@ -9,11 +9,15 @@
                 <p class="mobile-p hide-above-phb">Data analytics, skill, and strategy. All in the ultimate in-game experience.</p>
                 <plat-button>More Info</plat-button>
             </div>
-            <div class="col-tab-6">
+            <div class="col-dsk-6 hide-on-tab">
                 <img src="images/home_assets/hero-phone.png">
+            </div>
+            <div class="col-tab-12 hide-above-tab">
+                <img src="images/home_assets/coversharks-home-mobile-phone.png">
             </div>   
         </div>     
     </div>
+    
     <div class="yeti">
         <div class="row">
             <div class="promoImg col-tab-3 col-tab-offset-1 hide-on-phb">
@@ -29,6 +33,7 @@
             </div>
         </div>
     </div>
+    
     <div class="choose">
         <div class="row">
             <div class="col-tab-5 col-tab-offset-1 col-phb-10 col-phb-offset-1">
@@ -44,10 +49,44 @@
             </div>
         </div>
     </div>
+    
     <div class="overview">
         <h1>Overview of Game Play</h1>
-        <div class="row">
-            <div class="col-tab-3 col-tab-offset-1 hide-on-phb">
+        
+        <!--Mobile Overview-->
+        <div class="row hide-above-phb mobile-overview">
+            <div class="col-phn-12">
+                <img src="images/home_assets/app-image-1-01.png">
+            </div>
+            <div class="col-phn-8 col-phn-offset-2">
+                <h3>In-Game Experience</h3>
+            </div>
+            <div class="col-phn-10 col-phn-offset-1">
+                <p>Scores of each game are updated in real-time to offer players the ultimate in-Game experience.</p>
+            </div>
+            <div class="col-phn-12">
+                <img src="images/home_assets/app-image-2-04.png">
+            </div>
+             <div class="col-phn-8 col-phn-offset-2">
+                <h3>Data and Analytics</h3>
+            </div>
+            <div class="col-phn-10 col-phn-offset-1">
+                <p>As an integral part of game play, CoverSharks offers players a wide variety of real-time data and analytics.</p>
+            </div> 
+            <div class="col-phn-12">
+                <img src="images/home_assets/app-image-3-05.png">
+            </div>
+             <div class="col-phn-8 col-phn-offset-2">
+                <h3>Skill and Strategy</h3>
+            </div>
+            <div class="col-phn-10 col-phn-offset-1">
+                <p>Game odds are updated daily in real-time giving players an added level of skill and strategy.</p>
+            </div>            
+        </div>
+        
+        <!--Desktop Overview-->
+        <div class="row hide-on-phb">
+            <div class="col-dsk-3 col-dsk-offset-1 col-tab-4">
                 <div class="panel">
                     <div class="row">
                         <div class="col-tab-10 col-tab-offset-1 col-phn-12">                
@@ -62,7 +101,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-tab-3 hide-on-phb">
+            <div class="col-dsk-3 col-tab-4">
                 <div class="panel">
                     <div class="row">
                         <div class="col-tab-10 col-tab-offset-1 col-phn-12"> 
@@ -77,7 +116,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-tab-3 hide-on-phb">
+            <div class="col-dsk-3 col-tab-4">
                 <div class="panel">
                     <div class="row">
                         <div class="col-tab-10 col-tab-offset-1 col-phn-12">                            
@@ -93,5 +132,20 @@
                 </div>
             </div>
         </div>
-    </div>    
+    </div>
 </div>
+<!--Navbar Drawer-->
+        <plat-drawer class="drawer"  plat-options="{ position: 'right' }">
+            <plat-link plat-options="{ view: '', isUrl: true }">
+                <span>Home</span>    
+            </plat-link>
+            <plat-link plat-options="{ view: '/howtoplay', isUrl: true }">
+                <span>How to Play</span>
+            </plat-link>
+            <plat-link plat-options="{ view: '/about', isUrl: true }">
+                <span>About</span>
+            </plat-link>
+            <plat-link plat-options="{ view: '/promotions', isUrl: true }">
+                <span>Promotions</span>
+            </plat-link>
+        </plat-drawer>
