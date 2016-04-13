@@ -15,18 +15,35 @@
             <footer></footer>
         </div>
         <plat-drawer class="drawer"  plat-options="{ position: 'right' }">
-            <plat-link plat-options="{ view: '', isUrl: true }">
-                <span>Home</span>    
-            </plat-link>
-            <plat-link plat-options="{ view: '/howtoplay', isUrl: true }">
-                <span>How to Play</span>
-            </plat-link>
-            <plat-link plat-options="{ view: '/about', isUrl: true }">
-                <span>About</span>
-            </plat-link>
-            <plat-link plat-options="{ view: '/promotions', isUrl: true }">
-                <span>Promotions</span>
-            </plat-link>
+            <div class="box" onclick="closeNav()"></div>
+            <ul>
+                <li>
+                    <img src="images/home_assets/coversharks-mark-white.svg">
+                </li>
+                <li>
+                    <plat-link plat-options="{ view: '', isUrl: true }">
+                        <span>Home</span>    
+                    </plat-link>
+                </li>
+                <li>
+                    <plat-link plat-options="{ view: '/howtoplay', isUrl: true }">
+                        <span>How to Play</span>
+                    </plat-link>
+                </li>
+                <li>
+                    <plat-link plat-options="{ view: '/about', isUrl: true }">
+                        <span>About</span>
+                    </plat-link>
+                </li>
+                <li>
+                    <plat-link plat-options="{ view: '/promotions', isUrl: true }">
+                        <span>Promotions</span>
+                    </plat-link>
+                </li>
+                <li>
+                    <img src="">
+                </li>
+            </ul>
         </plat-drawer>
         <script type="text/javascript" src="dist/app.js"></script>
     </body>
