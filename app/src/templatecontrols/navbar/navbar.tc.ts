@@ -10,6 +10,10 @@ export default class NavbarTemplateControl extends ui.TemplateControl {
             this.drawerController.control.close();
         });
     }
+    
+    closeNav(): void {
+        this.drawerController.control.close();
+    }
 }
 
 register.control('navbar', NavbarTemplateControl);

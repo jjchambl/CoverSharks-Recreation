@@ -11,7 +11,82 @@
         padding: 0;
     }
     
-    // navbar
+    // Drawer
+    
+    .drawer {
+        background-color: #1a1e3a;
+        padding: 0 1.5em;
+        height: 100%;
+        img {
+            height: 3em;
+        }
+        ul {
+            text-align: center;
+            list-style-type: none;
+            a {
+                text-decoration: none;
+                color: white;
+            }
+            li {
+                padding: 2em 0;
+                text-transform: uppercase;
+            }
+        }
+        .box {
+            margin-left: auto;
+            height: 100px;
+            width: 100px;
+            background-color: transparent;
+            border-radius: 5px;
+            position: relative;
+            &:after {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                content: '\d7';
+                font-size: 50px; 
+                color: #FFF;
+                line-height: 100px;
+                text-align: center;
+            }
+        }
+        
+        
+    }
+    
+    // Navbar
+    
+    .navbar-icon {
+        @icon-color: blue;
+        @icon-gap: .5em;
+        @icon-stroke: .1em;
+        @icon-width: 1.5em;
+        margin-top: 1.6em;
+        display: inline-block;
+        position: relative;
+        height: @icon-stroke;
+        width: @icon-width;
+        background-color: @icon-color;
+
+        &:before, &:after {
+            content: '';
+            position: absolute;
+            display: inline-block;
+            height: @icon-stroke;
+            width: @icon-width;
+            background-color: @icon-color;
+        }
+
+        &:before {
+            bottom: @icon-gap;
+        }
+
+        &:after {
+            bottom: @icon-gap * 2;
+        }
+    }
     
     .navbar {
         height: 3.2em;
@@ -51,8 +126,8 @@
             height: 3.2em;
             background-color: #f2f3f4;
             img {                
-                height: 75%;
-                width: 40%;
+                height: 60%;
+                width: 20%;
                 padding: 0 .2em;
                 margin-top: .4em;
             }

@@ -1,8 +1,7 @@
 <div class="container">
-    
-    <div class="data">
+ <div class="data">
         <div class="row">
-            <div class="col-tab-4 col-tab-offset-1 col-phb-10 col-phb-offset-1">
+            <div class="col-dsk-4 col-dsk-offset-1 col-tab-10 col-tab-offset-1">
                 <h1>Are you in?</h1>
                 <p class="hide-on-phb">Data, analytics, skill, and strategy. All in the ultimate in-game experience. CoverSharks is primed to be the industry pioneer in a new genre
                     of game play...Team Fantasy Sports.
@@ -10,8 +9,11 @@
                 <p class="mobile-p hide-above-phb">Data analytics, skill, and strategy. All in the ultimate in-game experience.</p>
                 <plat-button>More Info</plat-button>
             </div>
-            <div class="col-tab-6">
+            <div class="col-dsk-6 hide-on-tab">
                 <img src="images/home_assets/hero-phone.png">
+            </div>
+            <div class="col-tab-12 hide-above-tab">
+                <img src="images/home_assets/coversharks-home-mobile-phone.png">
             </div>   
         </div>     
     </div>
@@ -130,5 +132,20 @@
                 </div>
             </div>
         </div>
-    </div>    
+    </div>
 </div>
+<!--Navbar Drawer-->
+        <plat-drawer class="drawer"  plat-options="{ position: 'right' }">
+            <plat-link plat-options="{ view: '', isUrl: true }">
+                <span>Home</span>    
+            </plat-link>
+            <plat-link plat-options="{ view: '/howtoplay', isUrl: true }">
+                <span>How to Play</span>
+            </plat-link>
+            <plat-link plat-options="{ view: '/about', isUrl: true }">
+                <span>About</span>
+            </plat-link>
+            <plat-link plat-options="{ view: '/promotions', isUrl: true }">
+                <span>Promotions</span>
+            </plat-link>
+        </plat-drawer>
