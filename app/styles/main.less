@@ -1,11 +1,21 @@
 @import '../../node_modules/platypusui/dist/platypus';
 @import '/typography.less';
-// for fonts; create and then import typography.less file, cf. css@font-face commands to import the font files into the .less file.
 
 & {
     html {
         background-color: gray;
     }
+    
+        // Colors
+    @white-background: #feffff;
+    @green-font: #34b994;
+    @black-button: #393a3c;
+    @blue-font: #3798c5;
+    @gray-background: #f2f3f4;
+    @green-button: #34b994;
+    @blue-footer-font:#344b64;
+    @blue-box: #3798c5;
+    
     .app {
         // height: 100%;
         width: 100%;
@@ -62,7 +72,6 @@
     // Navbar
     
     .navbar {
-        margin-bottom: 3.2em;
         position: fixed;
         z-index: 100;
         opacity: .95;
@@ -209,20 +218,7 @@
                 padding: 0;
             }
         }
-    }
-    
-    // Colors
-    @white-background: #feffff;
-    @green-font: #34b994;
-    @black-button: #393a3c;
-    @blue-font: #3798c5;
-    @gray-background: #f2f3f4;
-    @green-button: #34b994;
-    @blue-footer-font:#344b64;
-    @blue-box: #3798c5;
-    
-    
-    
+    }    
 }
 
 @import '../src/templatecontrols/footer/footer.tc.less';
