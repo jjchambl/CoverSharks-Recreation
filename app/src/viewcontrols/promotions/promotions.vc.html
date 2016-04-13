@@ -10,19 +10,32 @@
             <p>Auburn vs. Alabama A-Day Promotion Free giveaways at on-site promotions</p>
         
             <plat-button id="registerBtn" class="button-primary" plat-tap="toggleModal()">Register</plat-button>
+            
+            <!--<div class="modalDiv">-->
             <plat-modal plat-options="{ transition: 'fade' }" plat-bind="modal" class="modal-prompt">
-                <div class="prompt-title">Please enter your registration information:</div>
-                <div class="prompt-body">
-                    <input type="text" placeholder="First and Last Name">
-                    <input type="text" placeholder="Email">
-                    <input type="text" placeholder="Zip Code">
-                    <input type="text" placeholder="Favorite Team">
-                    <p>Enter the above text fields and click register to enter the Free Yeti Cooler or Apple Watch Promotion. This promotion runs through April 17. You will recieve a confirmation email after you registration has been processed.</p>
-                </div>
-                <div class="prompt-action">
-                    <plat-button id="modalBtn" class="button-primary" plat-tap="toggleModal()">Register</plat-button>
-                </div>
+                
+                    <!--<div class="prompt-title modalTitle">
+
+                    </div>-->
+                    <div class="prompt-body">
+                        <p class="modalTitle"><b>Please enter your registration information:<b><span plat-tap="toggleModal()"><b>X</b></span></p>
+                        <input type="text" placeholder="First Name">
+                        <input type="text" placeholder="Last Name">
+                        <input type="text" placeholder="Email">
+                        <input type="text" placeholder="Zip Code">
+                        <select name="dropdownModal" placeholder="Favorite Team" id="">
+                            <option value="Favorite Team" placeholder="Favorite Team"></option>
+                            <option value="Alabama">Alabama</option>
+                            <option value="Auburn">Auburn</option>
+                        </select>
+                        <p>Enter the above text fields and click register to enter the Free Yeti Cooler or Apple Watch Promotion. This promotion runs through April 17. You will recieve a confirmation email after you registration has been processed.</p>
+                    </div>
+                    <div class="prompt-action">
+                        <plat-button id="modalBtn" class="button-primary" plat-tap="toggleModal()">Register</plat-button>
+                    </div>
+                
             </plat-modal>
+            <!--</div>-->
                 
         </div>
                 
