@@ -142,11 +142,14 @@
         
     .footer {
         width: 100%;
+        text-align: center;
+        @margin: .5em;
         background-color: #1a212b;
         color: @blue-footer-font;
         margin: 0;
         padding: 0;
         .footer-logo {
+            margin-top: @margin;
             height: 40%;
             img {
                 width: 40%;
@@ -154,7 +157,7 @@
         }
         .soc-media-footer {
             height: 40%;
-            margin: .2em 0 .3em 0;
+            margin-top: @margin;
             img {
                 width: 10%;
                 height: 1.5em;
@@ -164,10 +167,11 @@
         ul {
             list-style-type: none;
             // margin: 0;
-            padding: .3em 0 .3em 0;
+            padding: 0 .5em;
+            margin: 0;
             text-transform: uppercase;
             li {
-                // padding: 0 .5em;
+                margin: .3em 0;
                 font-family: WorkSans;
             }
         }
@@ -180,12 +184,8 @@
         .right {
             text-align: center;
         }
-        button {
-            margin-top: 1em;
-            display: inline-block;
-            // text-align: center;
-            // margin-left: auto;
-            // margin-right: auto;
+        .contact-btn {
+            margin: 1em 0;
             width: 12em;
             font-family: Roboto;
             background-color: #34ba95;
@@ -195,6 +195,12 @@
             background-color: #0f121a;
             text-align: center;
             text-transform: uppercase;
+            margin:0;
+            padding: 0;
+            p {
+                margin: .3em 0;
+                padding: 0;
+            }
         }
     }
     
