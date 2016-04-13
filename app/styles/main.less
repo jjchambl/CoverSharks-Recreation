@@ -58,39 +58,9 @@
     
     // Navbar
     
-    .navbar-icon {
-        @icon-color: blue;
-        @icon-gap: .5em;
-        @icon-stroke: .1em;
-        @icon-width: 1.5em;
-        margin-top: 1.6em;
-        display: inline-block;
-        position: relative;
-        height: @icon-stroke;
-        width: @icon-width;
-        background-color: @icon-color;
-
-        &:before, &:after {
-            content: '';
-            position: absolute;
-            display: inline-block;
-            height: @icon-stroke;
-            width: @icon-width;
-            background-color: @icon-color;
-        }
-
-        &:before {
-            bottom: @icon-gap;
-        }
-
-        &:after {
-            bottom: @icon-gap * 2;
-        }
-    }
-    
     .navbar {
         height: 3.2em;
-        width: 100%;
+        width: 96%;
         background-color: #ffffff;
         color: gray;
         padding: 0 .5em;
@@ -127,11 +97,45 @@
             background-color: #f2f3f4;
             img {                
                 height: 60%;
-                width: 20%;
+                width: 30%;
                 padding: 0 .2em;
                 margin-top: .4em;
             }
-        }        
+        }
+        .drawer-box {
+            position: absolute;
+            margin-top: .8em;
+            padding: 0;
+            .navbar-icon {
+                position: relative;
+                @icon-color: #3798c5;
+                @icon-gap: 7px;
+                @icon-stroke: 1px;
+                @icon-width: 20px;
+                margin: .5em 0 0 0;
+                display: inline-block;
+                height: @icon-stroke;
+                width: @icon-width;
+                background-color: @icon-color;
+
+                &:before, &:after {
+                    content: '';
+                    position: absolute;
+                    display: inline-block;
+                    height: @icon-stroke;
+                    width: @icon-width;
+                    background-color: @icon-color;
+                }
+
+                &:before {
+                    bottom: @icon-gap;
+                }
+
+                &:after {
+                    bottom: @icon-gap * 2;
+                }
+            }        
+        }     
     }
     
     // footer
