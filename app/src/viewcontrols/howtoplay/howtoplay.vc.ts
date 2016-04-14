@@ -15,27 +15,41 @@ export default class HowtoplayViewControl extends BaseViewControl {
     }
     
     startView() {
-        if(this.context.getVideos === false) {
-            this.context.getStart = true;
-        }
-        else {
-            this.context.getVideos = false;
-        }
+        // if(this.context.getVideos === false) {
+        //     this.context.getStart = true;
+        // }
         
-        // this.context.getVideos = !this.context.getStart || this.context.getVideos;
+        // if (this.context.getVideos ===true) {
+        //     this.context.getStart = false;
+        // }
+        
+        // else {
+        //     this.context.get = true,
+        //     this.context.getStart = false;
+        // }
+        
+        this.context.getVideos = !this.context.getVideos,
+        this.context.getStart = !this.context.getStart;
         
         console.log(`start: ${this.context.getStart}, videos: ${this.context.getVideos}`);
     }
     
     videoView() {
-        if(this.context.getStart === false) {
-            this.context.getVideos = true;
-        }
-        else {
-            this.context.getStart = false;
-        }
+        // if(this.context.getStart === false) {
+        //     this.context.getVideos = true;
+        // }
+        // if (this.context.getStart === true) {
+        //     this.context.getVideos = false;
+        // }
         
-        // this.context.getStart = !this.context.getVideos;
+        // else {
+        //     this.context.getStart = false,
+        //     this.context.getVideos = true;
+        // }
+        
+        this.context.getStart = !this.context.getStart,
+        this.context.getVideos = !this.context.getVideos;
+        
         
         console.log(`start: ${this.context.getStart}, videos: ${this.context.getVideos}`);
     }
