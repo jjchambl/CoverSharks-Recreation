@@ -28,6 +28,28 @@
                 <h2>FREE YETI COOLER or APPLE WATCH</h2>
                 <plat-button id="registerBtn" class="button-primary" plat-tap="toggleModal()">Register</plat-button>
             </div>
+            
+            <plat-modal plat-options="{ transition: 'fade' }" plat-bind="modal" class="modal-prompt">
+            
+                <div class="prompt-body">
+                    <span class="closeBtn" plat-tap="toggleModal()">X</span>
+                    <p class="modalTitle"><b>Please enter your registration information:</p>
+                    <input class="modalInput" type="text" placeholder="First Name">
+                    <input class="modalInput" type="text" placeholder="Last Name">
+                    <input class="modalInput" type="text" placeholder="Email">
+                    <input class="modalInput" type="text" placeholder="Zip Code">
+                    <select class="modalSelect" name="dropdownModal" placeholder="Favorite Team" id="">
+                        <option value="Favorite Team" placeholder="Favorite Team"></option>
+                        <option value="Alabama">Alabama</option>
+                        <option value="Auburn">Auburn</option>
+                    </select>
+                    <p>Enter the above text fields and click register to enter the Free Yeti Cooler or Apple Watch Promotion. This promotion runs through April 17. You will recieve a confirmation email after you registration has been processed.</p>
+                </div>
+                <div class="prompt-action">
+                    <plat-button id="modalBtn" class="button-primary" plat-tap="toggleModal()">REGISTER</plat-button>
+                </div>
+            </plat-modal>
+            
             <div class="col-phn-12 hide-above-phb">
                 <img src="images/home_assets/apple-watch-and-yeti-image.png">
             </div>
@@ -106,6 +128,12 @@
                     <p>Skill and Strategy</p>
                     <p>Game odds are updated daily in real-time giving players an added level of skill and strategy.</p>
                 </div>
+            </div>
+            <div class="email-form col-tab-12">
+                <h4>Enter your email to receive updates about CoverSharks</h4>
+                <input type="text" class="email" placeholder="Email" align="center">
+                <br>
+                <plat-button class="press" align="center">SUBSCRIBE</plat-button>
             </div>
         </div>
     </div>
