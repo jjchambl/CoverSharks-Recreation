@@ -6,11 +6,13 @@
         </div>
     </div>
         <!--Space for the navbar to route between the getting started and the videos page-->
-        <br>
-        <br>
-        <br>
-        <br>
+
+        <div>
+            <plat-button id="getStartBttn" class="plat-neutral" plat-tap="startView()" plat-bind="getStart">Getting Started</plat-button>
+            <plat-button id="videoBttn" class="plat-neutral" plat-tap="videoView()" plat-bind="getVideos">Videos</plat-button>
+        </div><hr>
         <!--end of the space for navbar-->
+<div plat-visible="{{getStart}}">
     <div class="row" id="getStartIphone">
     
     <div class="col-tab-6 hide-on-phn" id="dskViewPhone">
@@ -121,13 +123,34 @@
             <!--end of the space for the ol and footer-->
     </div>
 </div>
-<!--end of dsk view-->
-
-
-<!--mobile view-->
-<div>
-    
 </div>
-<!--end of mobile view-->
+<!--end of getStart view-->
+
+
+<!--video view-->
+<div plat-visible="{{getVideos}}">
+    <div class="row">
+        <div id="contest" class="col-tab-12">
+            <h3>Pick Your Game</h3>
+            <img src="images/how-to-play_assets/videos_assets/image1.jpg" alt="field pic">
+            <img src="images/how-to-play_assets/videos_assets/image2.jpg" alt="side view of player">
+            <img src="images/how-to-play_assets/videos_assets/image3.jpg" alt="no mans land">
+        </div>
+        
+        <div id="opponents" class="col-tab-12">
+            <h3>Pick Your Opponent</h3>
+            <img src="images/how-to-play_assets/videos_assets/image4.jpg" alt="exercise">
+            <img src="images/how-to-play_assets/videos_assets/image5.jpg" alt="stadium">
+            <img src="images/how-to-play_assets/videos_assets/image6.jpg" alt="grass">
+        </div>
+        
+        <div id="games" class="col-tab-12">
+            <h3>Pick Your Games</h3>
+            <img src="images/how-to-play_assets/videos_assets/image7.jpg" alt="quarterback">
+            <img src="images/how-to-play_assets/videos_assets/image8.jpg" alt="sidline shot">
+        </div>
+    </div>
+</div>
+<!--end of video view-->
 
 
