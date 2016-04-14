@@ -89,14 +89,17 @@
         .nav-links {
             margin: 0;
             padding: 0;
-            height: 3.2em;        
+            height: 3.2em;       
             ul {
                 list-style-type: none;
                 margin: 0;
                 padding: 0;
-                li {                    
+                position:fixed;
+                right:10%;
+                li {                   
                     font-family: WorkSans;
-                    text-transform: uppercase;
+                    text-transform: uppercase; 
+                    font-weight: bold;
                     display: inline-block;
                     padding: 0 .5em;
                     // height: 3.2em;
@@ -104,9 +107,16 @@
                     vertical-align: middle;
                     box-sizing: border-box;
                     border: 2px solid transparent;
-                }        
+                        .activeNavLinks {
+                            color:#a6a8ab; 
+                        }
+                        .activeNavLinks:focus {
+                            color:#2d97d2;
+                        }   
+                    }
+                }         
             }
-        }
+        
         .social-links {
             height: 3.1em;
             background-color: #f2f3f4;
