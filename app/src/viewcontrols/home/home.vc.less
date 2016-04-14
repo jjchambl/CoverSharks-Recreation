@@ -11,17 +11,14 @@
     @button-width: 12em;
     @button-height: 4em;
     
-    .container{
+    .home-container{
         position: relative;
         padding-top: 3.2em;
+        margin: 0;
     }
     .data {
-        // need to overlay these somehow
         background-image: url('/images/home_assets/coversharks-web-hero.jpg');
         background-size: cover;
-        // background-position-x: ;
-        // background-position-y: ;
-        // background-image: url('/images/home_assets/bkgrnd.svg');
         text-align: center;
         width: 100%;        
         color: white;
@@ -40,7 +37,6 @@
             color: white;
         }
         mobile-p {
-            // height: 10em;
             width: 75%;
             text-transform: uppercase;
             color: white;
@@ -50,6 +46,14 @@
             margin-top: 2em;
             margin-bottom: 0;
             padding: 0;
+        }
+        a {
+            font-family: Roboto;
+            padding: @button-height * .3 @button-width * .3;
+            border-radius: @button-border-radius;
+            background-color: #ffffff;
+            color: black;
+            text-transform: uppercase; 
         }
         button {
             width: @button-width;
@@ -62,41 +66,28 @@
     }
     
     .yeti {
-        // margin: 0;
-        text-align: center;
-        padding: 1em;
+        margin: 0;
+        padding: 0;
         img {
-            height: 20em;
-            // margin: 1em;
-            padding: 0;
+            height: 25em;
+            padding: .5em 0;
+            margin: 0;
         }
-        // .promoText {
-        //     margin: 3em 0 3em 4em;
-        //     padding-top: 3em;
-        //     padding-left: 4em;
-        //     padding-bottom: 3em;
-        // }
-
-        // .promoImg {
-        //     margin: 3em 4em 2em 0;
-        //     padding-top: 3em;
-        //     padding-right: 4em;  
-        //     padding-bottom: 3em;  
-        // }
         button {
             width: @button-width;
             height: @button-height;
             border-radius: @button-border-radius;
             background-color:#404042;
             color:white;
-            font-family: Roboto-Condensed;
-            text-transform: uppercase;        
+            text-transform: uppercase;
+            margin-bottom: 1em;        
         }
     }
     .choose {
-        background-color: #182245;
-        padding: 1em;
-        // height: 35em;
+        text-align: center;
+        background-image: url('/images/home_assets/bkgrnd.svg');
+        background-size: cover;
+        padding: 1em 1em 3em 1em;
         h1 {
             color: #2798ca;
         }
@@ -104,7 +95,16 @@
             color: white;
         }
         img {
-            height: 32em;
+            height: 27em;
+            width: auto;
+        }
+        a {
+            font-family: Roboto;
+            padding: @button-height * .3 @button-width * .3;
+            border-radius: @button-border-radius;
+            background-color: #ffffff;
+            color: black;
+            text-transform: uppercase;
         }
         button {
             width: @button-width;
@@ -112,17 +112,11 @@
             border-radius: @button-border-radius;
             background-color:white;
             color:black;
-            font-family: Roboto-Condensed;
             text-transform: uppercase; 
         }
     }
-    .mobile-overview {
-        img {
-            height: 25em;
-            width: 100%
-        }
-    }
     .overview {
+        text-align: center;
         background-color: #f2f3f4;
         margin: 0;
         padding: 0;
@@ -130,7 +124,10 @@
             color: #2798ca;
         }
         .panel {
-            border: 1px solid black;
+            border-top: 1px solid black;
+            border-left: 1px solid black;
+            border-right: 3px solid gray;
+            border-bottom: 3px solid gray;
             border-radius: 1%;
             margin: .5em 2em;
             img {
@@ -142,6 +139,20 @@
             p {
                 padding: 0 2em;
                 margin: .2em;
+            }
+        }
+        .email-form {            
+            padding: 2em 0;
+            h4 {
+                text-align: center; 
+                margin: 0 0 1em 0;
+                padding: 0;
+            }
+            input {
+                font-family: Roboto;
+                padding: 0;
+                text-align: center;
+                margin: auto 0 auto 0;
             }
         }        
     }
@@ -155,19 +166,42 @@
                 height: 18em;
             }
         }
+        .yeti {
+            text-align: center;
+            img {
+                height: 15em;
+            }
+        }
         .overview {
             .panel {
                 border: 0;
                 margin-left: auto;
                 margin-right: auto;
                 img {
-                    height: 20em;
+                    height: 15em;
                     width: auto;
                     border-radius: @button-border-radius;
+                    margin-left: auto;
+                    margin-right: auto;
                 }
                 p {
                     padding: 0 5em;
                     margin: 1em;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        .data {
+            img {
+                height: 12em;
+            }
+        }
+        .overview {
+            .panel {
+                img {
+                    height: 15em;
+                    width: auto;
                 }
             }
         }

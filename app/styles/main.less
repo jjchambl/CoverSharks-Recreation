@@ -16,6 +16,13 @@
     @blue-footer-font:#344b64;
     @blue-box: #3798c5;
     
+    button {
+        font-family: Roboto;
+    }
+    plat-button {
+        font-family: Roboto;
+    }
+    
     .app {
         // height: 100%;
         width: 100%;
@@ -64,9 +71,10 @@
                 line-height: 100px;
                 text-align: center;
             }
-        }
-        
-        
+<<<<<<< HEAD
+=======
+        }        
+>>>>>>> e762a1c8fc333cbcbfc5f315fa4e23700221d588
     }
     
     // Navbar
@@ -90,14 +98,17 @@
         .nav-links {
             margin: 0;
             padding: 0;
-            height: 3.2em;        
+            height: 3.2em;       
             ul {
                 list-style-type: none;
                 margin: 0;
                 padding: 0;
-                li {                    
+                position:fixed;
+                right:10%;
+                li {                   
                     font-family: WorkSans;
-                    text-transform: uppercase;
+                    text-transform: uppercase; 
+                    font-weight: bold;
                     display: inline-block;
                     padding: 0 .5em;
                     // height: 3.2em;
@@ -105,9 +116,16 @@
                     vertical-align: middle;
                     box-sizing: border-box;
                     border: 2px solid transparent;
-                }        
+                        .activeNavLinks {
+                            color:#a6a8ab; 
+                        }
+                        .activeNavLinks:focus {
+                            color:#2d97d2;
+                        }   
+                    }
+                }         
             }
-        }
+        
         .social-links {
             height: 3.1em;
             background-color: #f2f3f4;
@@ -231,6 +249,8 @@
             color: white;
             h1 {
                 padding-top: 2.25em;
+                // font-family: Roboto;
+                // font-weight: thin;
             }
         }
 
@@ -239,34 +259,43 @@
             margin-bottom: 3em;
             h1 {
                 color: #00b786;
+                font-family: WorkSans;
+                font-weight: bolder;
             }
             p {
                 color: #9e9f9e;
+                font-family: Roboto;
             }
         }
 
-        .container {
+        .about-container {
             text-align: center;
             p {
                 color: #9e9f9e;
                 padding-bottom: 3em;
+                font-family: Roboto;
             }
             h1 {
                 color: #00b786;
+                font-family: WorkSans;
+                font-weight: bolder;
             }
         }
 
         .origin {
             padding-left: 0.5em;
+            font-family: WorkSans;
             h3 {
                 color: #9e9f9e;
                 margin-top: 0.25em;
                 margin-bottom: 0.25em;
+                font-weight: bolder;
             }
             h2 {
                 color: #343534;
                 padding-top: 0.1em;
                 margin-bottom: 0.25em;
+                font-weight: bolder;
             }
         }
 
@@ -286,6 +315,7 @@
             p {
                 color: white;
                 margin-bottom: 0.5em;
+                font-family: Roboto;
             }
         }
 
@@ -299,12 +329,15 @@
             padding-bottom: 4em;
             p {
                 padding: 1em;
+                font-family: WorkSans;
             }
         }
 
         .jobTitle {
             background-color: #3798c5;
             border-radius: 1em 1em 0 0;
+            font-family: WorkSans;
+            font-weight: bolder;
             h3 {
                 color: white;
                 text-align: center;
@@ -329,7 +362,6 @@
         .press {
             width: 12em;
             display: inline-block;
-            font-family: Roboto-Condensed;
             background-color: #343534;
             border-radius: 0.5em;
             color: white;
@@ -337,6 +369,7 @@
         }
 
         .email {
+            font-family: WorkSans;
             width: 23em;
             background-color: white;
             border-radius: 0.5em;
@@ -374,6 +407,86 @@
             margin-right: auto;
         }   
 }
+
+    //Promotions Page
+        .promoHeader {
+        height: 17em;
+        background-image: url('/images/promotions_assets/promo-hero.jpg');
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: 15%;
+        text-align: center;
+        color: white;
+        .promoTitle {
+            padding-top: 2.25em;
+            color:#f2f3f4;
+            text-align:center;
+        }
+    }
+        .promoText, .promoImg {
+            padding-top: 3em;
+            padding-left: 4em;
+            padding-bottom: 3em;
+            text-align: center;
+        }
+
+        .registerNowText, .throughDateText {
+            color:#444444;
+        }
+
+        .freeYetiAppleText {
+            color:#34ba95;
+        }
+
+        #registerBtn {
+            background-color:#404042;
+            color:white;
+            width:12em;
+            padding:.75em;
+            border:none;
+            border-radius: 5px;
+        }
+
+        .closeBtn {
+        position: fixed;
+        right: 5%;
+        top: 3%;
+        background-color: transparent;
+        border: none;
+        }
+
+        .closeBtn:hover {
+            cursor: pointer;
+        }
+
+        .modalTitle {
+            text-align:center;
+            color:#2d97d2;
+        }
+
+        .modalInput {
+            width:25em;
+            padding: 1em;
+            margin-bottom: 1em;
+            border-radius: 5px;
+            border: #ffffff;
+        }
+
+        .modalSelect {
+            width:25em;
+            padding:3em;
+            border-radius: 5px;
+            border: #ffffff;
+        }
+
+        #modalBtn {
+            background-color:#34ba95;
+            width:12em;
+            font-family: Roboto-Condensed;
+            padding:.75em;
+            border: none;
+            border-radius: 5px;
+        }
 
 @import '../src/templatecontrols/footer/footer.tc.less';
 @import '../src/templatecontrols/navbar/navbar.tc.less';

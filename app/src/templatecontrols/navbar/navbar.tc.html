@@ -1,7 +1,11 @@
+<!--Two main issues with the navbar. First, for some reason when the drawer opens, the navbar div is wider than the body of the page. 
+    I'm not sure if the padding is off on something I styled, but I haven't had a chance to look at it in-depth yet. Second, the drawer 
+    won't stay level with the page-when it's opened the user has to scroll to the top to select the links. I don't know if you can resize
+    the drawer so that it stays even with the page (maybe set its position to fixed), or if we just need to have the navbar set at the top.-->
 <div class="navbar">
     <div class="row">
         <div class="col-phb-2 hide-above-phb nav-logo">
-            <plat-link plat-options="{ view: '', isUrl: true }"><img src="images/home_assets/logo-blue.svg"></plat-link>
+            <plat-link plat-options="{ view: '', isUrl: true }"><img src="images/home_assets/coversharks-mark-color.svg"></plat-link>
         </div>
         <div class="col-tab-2 hide-on-phb">
             <div class="nav-logo">
@@ -11,9 +15,9 @@
         <div class="col-tab-6 col-tab-offset-2 hide-on-phb">
             <div class="nav-links">
                 <ul>
-                    <li><plat-link plat-options="{ view: 'howtoplay', isUrl: true }">How to Play</plat-link></li>
-                    <li><plat-link plat-options="{ view: 'about', isUrl: true }">About</plat-link></li>
-                    <li><plat-link plat-options="{ view: 'promotions', isUrl: true}">Promotions</plat-link></li>
+                    <li><plat-link class="activeNavLinks" plat-options="{ view: 'howtoplay', isUrl: true }">How to Play</plat-link></li>
+                    <li><plat-link class="activeNavLinks" plat-options="{ view: 'about', isUrl: true }">About</plat-link></li>
+                    <li><plat-link class="activeNavLinks" plat-options="{ view: 'promotions', isUrl: true}">Promotions</plat-link></li>
                 </ul>
             </div>
         </div>
