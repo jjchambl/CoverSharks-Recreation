@@ -7,12 +7,14 @@
 
     }
     
-    @button-border: 2;
+    @button-border-radius: 5px;
     @button-width: 12em;
+    @button-height: 4em;
     
     .container{
         position: relative;
         padding-top: 3.2em;
+        margin: 0;
     }
     .data {
         // need to overlay these somehow
@@ -50,20 +52,40 @@
             margin-bottom: 0;
             padding: 0;
         }
+        button {
+            width: @button-width;
+            height: @button-height;
+            border-radius: @button-border-radius;
+            background-color: #ffffff;
+            color: black;
+            text-transform: uppercase;
+        }
     }
     
     .yeti {
-        // margin: 0;
-        padding: 0;
+        margin: 0;
+        text-align: center;
+        padding: .5em;
         img {
-            height: 20em;
+            height: 25em;
+            // margin: 1em;
+            padding: 0;
+            margin: 0;
         }
-        .promoText {
-            // margin-top: 2em;
+        button {
+            width: @button-width;
+            height: @button-height;
+            border-radius: @button-border-radius;
+            background-color:#404042;
+            color:white;
+            font-family: Roboto-Condensed;
+            text-transform: uppercase;        
         }
     }
     .choose {
         background-color: #182245;
+        padding: 1em;
+        // height: 35em;
         h1 {
             color: #2798ca;
         }
@@ -71,7 +93,16 @@
             color: white;
         }
         img {
-            height: 25em;
+            height: 32em;
+        }
+        button {
+            width: @button-width;
+            height: @button-height;
+            border-radius: @button-border-radius;
+            background-color:white;
+            color:black;
+            font-family: Roboto-Condensed;
+            text-transform: uppercase; 
         }
     }
     .mobile-overview {
@@ -88,17 +119,54 @@
             color: #2798ca;
         }
         .panel {
-            border: 1px solid black;
+            border-top: 1px solid black;
+            border-left: 1px solid black;
+            border-right: 3px solid gray;
+            border-bottom: 3px solid gray;
             border-radius: 1%;
             margin: .5em 2em;
-            height: 22em;
             img {
                 width: 75%;
                 height: 50%;
                 margin: .5em 0;
                 padding: 0;
             }
+            p {
+                padding: 0 2em;
+                margin: .2em;
+            }
+        }        
+    }
+    @media only screen and (max-width: 900px) {
+        .data {
+            background-image: url('/images/home_assets/coversharks-home-mobile-hero.png');
+            background-size: cover;
+            background-position-x: center;
+            background-position-y: 60%;
+            img {
+                height: 18em;
+            }
         }
-        
+        .yeti {
+            img {
+                height: 15em;
+            }
+        }
+        .overview {
+            .panel {
+                border: 0;
+                margin-left: auto;
+                margin-right: auto;
+                img {
+                    height: 20em;
+                    width: auto;
+                    border-radius: @button-border-radius;
+                }
+                p {
+                    padding: 0 5em;
+                    margin: 1em;
+                }
+            }
+        }
     }
 }

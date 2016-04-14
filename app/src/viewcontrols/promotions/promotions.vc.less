@@ -16,33 +16,24 @@
     background-position-y: 15%;
     text-align: center;
     color: white;
-    h1 {
+    .promoTitle {
         padding-top: 2.25em;
         color:#f2f3f4;
         text-align:center;
     }
 }
-.promoText {
+.promoText, .promoImg {
     padding-top: 3em;
     padding-left: 4em;
     padding-bottom: 3em;
+    text-align: center;
 }
 
-.promoImg {
-    padding-top: 3em;
-    padding-right: 4em;  
-    padding-bottom: 3em;  
-}
- 
-h4 {
-    color:#a8a9ac;
+.registerNowText, .throughDateText {
+    color:#444444;
 }
 
-h2 {
-    color:#34ba95;
-}
-
-h3 {
+.freeYetiAppleText {
     color:#34ba95;
 }
 
@@ -50,25 +41,41 @@ h3 {
     background-color:#404042;
     color:white;
     width:12em;
-    font-family: Roboto-Condensed;
     padding:.75em;
+    border:none;
+    border-radius: 5px;
 }
 
+.closeBtn {
+   position: fixed;
+   right: 5%;
+   top: 3%;
+   background-color: transparent;
+   border: none;
+}
+
+.closeBtn:hover {
+    cursor: pointer;
+}
 
 .modalTitle {
     text-align:center;
     color:#2d97d2;
 }
 
-input {
+.modalInput {
     width:25em;
     padding: 1em;
     margin-bottom: 1em;
+    border-radius: 5px;
+    border: #ffffff;
 }
 
-select {
+.modalSelect {
     width:25em;
     padding:3em;
+    border-radius: 5px;
+    border: #ffffff;
 }
 
 #modalBtn {
@@ -76,5 +83,7 @@ select {
     width:12em;
     font-family: Roboto-Condensed;
     padding:.75em;
+    border: none;
+    border-radius: 5px;
 }
 
