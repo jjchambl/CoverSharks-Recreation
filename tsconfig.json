@@ -29,6 +29,7 @@
         "app/src/viewcontrols/base/base.vc.ts",
         "app/src/viewcontrols/home/home.vc.ts",
         "app/src/viewcontrols/howtoplay/howtoplay.vc.ts",
+        "app/src/viewcontrols/howtoplay/videos/videos.vc.ts",
         "app/src/viewcontrols/promotions/promotions.vc.ts"
     ]
 }
