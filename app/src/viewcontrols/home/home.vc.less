@@ -17,12 +17,8 @@
         margin: 0;
     }
     .data {
-        // need to overlay these somehow
         background-image: url('/images/home_assets/coversharks-web-hero.jpg');
         background-size: cover;
-        // background-position-x: ;
-        // background-position-y: ;
-        // background-image: url('/images/home_assets/bkgrnd.svg');
         text-align: center;
         width: 100%;        
         color: white;
@@ -41,7 +37,6 @@
             color: white;
         }
         mobile-p {
-            // height: 10em;
             width: 75%;
             text-transform: uppercase;
             color: white;
@@ -51,6 +46,14 @@
             margin-top: 2em;
             margin-bottom: 0;
             padding: 0;
+        }
+        a {
+            font-family: Roboto;
+            padding: @button-height * .3 @button-width * .3;
+            border-radius: @button-border-radius;
+            background-color: #ffffff;
+            color: black;
+            text-transform: uppercase; 
         }
         button {
             width: @button-width;
@@ -67,12 +70,8 @@
         padding: 0;
         img {
             height: 25em;
-            // margin: 1em;
             padding: .5em 0;
             margin: 0;
-        }
-        h4 {
-            // padding: 3em 0 0 0;
         }
         button {
             width: @button-width;
@@ -88,7 +87,7 @@
         text-align: center;
         background-image: url('/images/home_assets/bkgrnd.svg');
         background-size: cover;
-        padding: 1em;
+        padding: 1em 1em 3em 1em;
         h1 {
             color: #2798ca;
         }
@@ -98,6 +97,14 @@
         img {
             height: 27em;
             width: auto;
+        }
+        a {
+            font-family: Roboto;
+            padding: @button-height * .3 @button-width * .3;
+            border-radius: @button-border-radius;
+            background-color: #ffffff;
+            color: black;
+            text-transform: uppercase;
         }
         button {
             width: @button-width;
@@ -185,6 +192,11 @@
         }
     }
     @media only screen and (max-width: 768px) {
+        .data {
+            img {
+                height: 12em;
+            }
+        }
         .overview {
             .panel {
                 img {
