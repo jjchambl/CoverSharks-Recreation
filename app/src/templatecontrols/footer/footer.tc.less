@@ -5,14 +5,24 @@
 
     [plat-control="footer"] {
         
-        @blue-footer-font:#344b64;
+        @button-border-radius: .5em;
+        @button-width: 12em;
+        @button-height: 4em;
+        @white: #ffffff;
+        @green: #34b994;
+        @black-button: #393a3c;
+        @light-blue: #3798c5;
+        @gray-background: #f2f3f4;
+        @dark-blue:#344b64;
+        @gray: #a6a8ab;
+        @transition-duration: .5s;
 
         .footer {
             width: 100%;
             text-align: center;
             @margin: .5em;
             background-color: #1a212b;
-            color: @blue-footer-font;
+            color: @dark-blue;
             margin: 0;
             padding: 0;
             .footer-logo {
@@ -40,9 +50,12 @@
                     font-family: WorkSans;
                     font-weight: bold;
                 }
+                a:hover {
+                    color: darken(@light-blue, 20%);
+                }
             }
             .vert-line {
-                border-left: 1px solid @blue-footer-font;
+                border-left: 1px solid @dark-blue;
             }
             .left {
                 text-align: center;
@@ -54,9 +67,13 @@
                 margin: 1em 0;
                 width: 12em;
                 font-family: Roboto;
-                background-color: #34ba95;
+                background-color: @green;
                 text-transform: uppercase;
                 border-radius: 5px;
+                &:hover {
+                    background-color: darken(@green, 10%);
+                    transition-duration: @transition-duration;
+                }
             }
             .bottom {
                 background-color: #0f121a;

@@ -4,14 +4,26 @@
     #platui > #variables;
 
     [plat-control="navbar"] {
+        
+        @button-border-radius: .5em;
+        @button-width: 12em;
+        @button-height: 4em;
+        @white: #ffffff;
+        @green: #34b994;
+        @black-button: #393a3c;
+        @light-blue: #3798c5;
+        @gray-background: #f2f3f4;
+        @dark-blue:#344b64;
+        @gray: #a6a8ab;
+        @transition-duration: .5s;
+        
         .navbar {
             position: fixed;
             z-index: 100;
             opacity: .95;
             height: 3.2em;
             width: 100%;
-            background-color: #ffffff;
-            color: gray;
+            background-color: @white;
             padding: 0 .5em;
             .nav-logo {
                 height: 3.2em;
@@ -41,15 +53,18 @@
                         vertical-align: middle;
                         box-sizing: border-box;
                         border: 2px solid transparent;
-                            .activeNavLinks {
-                                color:#a6a8ab; 
+                        a {
+                            color: @gray;
+                            &:hover {
+                                color: darken(@gray, 20%);
                             }
-                            .activeNavLinks:focus {
-                                color:#2d97d2;
-                            }   
+                            &:focus {
+                                color: @light-blue;
+                            }
                         }
-                    }         
-                }
+                    }
+                }         
+            }
             
             .social-links {
                 height: 3.1em;
