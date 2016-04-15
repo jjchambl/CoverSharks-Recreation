@@ -67,10 +67,13 @@
     text-align: left;
     h2 {
         max-width: 10em;
+        font-family: Work-Sans;
+        font-weight: bolder;
     }
         p {
             max-width: 24em;
-            font-weight: bold;
+            font-family: Work-Sans;
+            font-weight: bolder;
             font-size: 1.5em;
             color: #9e9f9e;
         }
@@ -79,9 +82,10 @@
                     border-style: solid;
                     border-radius: 5px;
                     max-width: 28em;
+                    font-family: Work-Sans;
                 }
                     button {
-                        background-color: #000000;
+                        background-color: #393a3c;
                         max-width: 12em;
                         border-radius: 5px;
                         font-weight: bold;
@@ -89,6 +93,7 @@
                         
                         span {
                             font-size: 1.5em;
+                            font-family: Roboto-Condensed;
                         }
                     }
 }
@@ -98,10 +103,14 @@
     h4 {
         text-align: left;
         color: #3798c5;
+        font-family: Work-Sans;
+        font-weight: bolder;
     }
         p {
            text-align: left;
-           color: #9e9f9e; 
+           color: #9e9f9e;
+           font-family: Roboto-Condensed;
+           font-weight: bold; 
         }   
 }
 // changes are good above....finally....
@@ -109,7 +118,9 @@
     background-color: #f2f3f4;
     h1 {
         text-align: center;
-        color: #34ba95; 
+        color: #34ba95;
+        font-family: Work-Sans;
+        font-weight: bolder; 
     }
 }
 
@@ -123,6 +134,7 @@
     padding-left: 0.15em;
     margin-bottom: 0px;
     display: inline-block;
+    font-family: Roboto-Condensed;
 }
 
 .numbers {
@@ -138,7 +150,8 @@
 
 .numbers div {
     font-size: 38px;
-    font-weight: bold;
+    font-family: Work-Sans;
+    font-weight: bolder;
     vertical-align: text-top;
 }
 
@@ -152,25 +165,31 @@
     margin-left: 17%;
     margin-right: 17%;
     color: #9e9f9e;
+    font-family: Work-Sans;
 }
 
 #gamePlay .scorePointsWin {
     width: 19em;
     margin-left: 18%;
     color: #3798c5;
+    font-family: Work-Sans;
+    font-weight: bolder;
 }
 
 #gamePlay .scorePointsWin p {
     color: #9e9f9e;
+    font-family: Roboto-Condensed;
+    font-weight: bold;
 }
 
 #gamePlay .scorePointsWin h2 {
-    width: 8em;
+    max-width: 8em;
     margin-top: 3em;
+    text-align: center;
 }
 // so far so good......
 
-@media only screen and(max-width: 700px) {
+@media only screen and(max-width: 768px) {
    #appSoon {
        text-align: center;
        padding-left: 0%;
@@ -178,7 +197,7 @@
    
    #appSoon h2 {
        text-align: center;
-       max-width: 10em;
+       max-width: 100%;
        margin-left: 17%;
        
    }
@@ -212,9 +231,10 @@
        vertical-align: middle;
    }
    
-   .scorePointsWin h2 {
+   #gamePlay .scorePointsWin h2 {
        text-align: center;
-       margin-left: 14%;
+    //    margin-left: 14%;
+       max-width: 26em;
    }
    
    .gamePlayItem p {
@@ -226,9 +246,82 @@
    }
    
    #gamePlay .scorePointsWin {
-       margin-left: 13%;
-   }    
+       width: 100%;
+       margin-left: 0%;
+       text-align: center;
+   }
+   
+   #whiteIphone {
+       text-align: center;
+   }
+   
+   #getStartIphone {
+       text-align: center;
+   }
+   
+//    #getStartIphone h2 {
+//        margin-left: 0%;
+//        display: block;
+//        width: 100%;
+//     }
+   
+   #dskViewPhone img {
+       margin-left: 0%;
+   }
+   
+   #midPage {
+       margin-left: 0%;
+   }
+   
+   #midPage h4 {
+       text-align: center;
+    }
+    
+    #midPage p {
+       text-align: center;
+    }
+    
+    #appSoon {
+        padding-left: 0%;
+    }    
 }
+
+@media only screen and(max-width: 948px){
+    #whiteIphone {
+        text-align: center;
+    }
+    
+    #getStartIphone {
+        text-align: center;
+    }
+    
+    #appSoon h2 {
+        margin-left: 0%;
+        display: block;
+        width: 100%;
+        
+    }
+    
+    #dskViewPhone img {
+        margin-left: 0%;
+    }
+    
+    #midPage {
+        margin-left: 0%;
+    }
+    
+    #midPage h4 {
+        text-align: center;
+    }
+    
+    #midPage p {
+        text-align: center;
+    }
+    
+    #appSoon {
+        padding-left: 0%;
+    }
+} 
 
 //  videos page 
 
@@ -238,6 +331,7 @@
     color: #000000;
     border-radius: 0px;
     outline: none;
+    font-family: Work-Sans;
 }
 
 #getStartBttn:focus {
@@ -275,55 +369,64 @@
 
 #videoPage h3 {
     color: #9e9f9e;
+    font-family: Roboto-Condensed;
 }
 
 #videoPage h4 {
     color: #3798c5;
+    font-family: Work-Sans;
+    font-weight: bolder;
 }
 
 #videoPage p {
     color: #9e9f9e;
+    font-family: Work-Sans;
+}
+
+#videoPage button {
+    font-family: Roboto-Condensed;
 }
 
 #contest div div {
     text-align: center;
     display: inline-block;
     max-width: 100%;
-    background-color: #ffffff;       
+    background-color: #feffff;       
 }
 
 #opponents div div {
     text-align: center;
     display: inline-block;
     max-width: 100%;
-    background-color: #ffffff;
+    background-color: #feffff;
 }
 
 #games div div {
     // margin-left: 12%;
     display: inline-block;
     max-width: 100%;
-    background-color: #ffffff;
+    background-color: #feffff;
 }
 
 #contest div div button {
     margin-bottom: 20px;
     border-radius: 5px;
-    background-color: #000000;
+    background-color: #393a3c;
     color: #ffffff;
+    font-family: Roboto-Condensed;
 }
 
 #opponents div div button {
     margin-bottom: 20px;
     border-radius: 5px;
-    background-color: #000000;
+    background-color: #393a3c;
     color: #ffffff;
 }
 
 #games div div button {
     margin-bottom: 20px;
     border-radius: 5px;
-    background-color: #000000;
+    background-color: #393a3c;
     color: #ffffff;
 }
 
@@ -340,7 +443,7 @@
     margin-left: 6px;
 }
 
-@media only screen and(max-width: 700px) {
+@media only screen and(max-width: 768px) {
     
     #videoPage {
         padding-right: 40px;
