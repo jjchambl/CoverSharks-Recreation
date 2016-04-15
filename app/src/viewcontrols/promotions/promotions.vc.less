@@ -8,6 +8,10 @@
     }
 }
 
+    @button-width: 12em;
+    @button-height: 4em;
+    @button-border-radius: .5em;
+    
 .promoHeader {
     height: 17em;
     background-image: url('/images/promotions_assets/promo-hero.jpg');
@@ -20,30 +24,53 @@
         padding-top: 2.25em;
         color:#f2f3f4;
         text-align:center;
+        font-family: WorkSans;
+        font-weight: 100;
     }
 }
 .promoText, .promoImg {
     padding-top: 3em;
     padding-left: 4em;
     padding-bottom: 3em;
-    text-align: center;
+    // text-align: center;
 }
 
-.registerNowText, .throughDateText {
+.registerNowText {
+    font-family:Roboto;
+    font-weight:bold;
     color:#444444;
+    font-size:2em;
+}
+
+.throughDateText {
+    font-family:Roboto;
+    font-weight:bold;
+    color:#444444;
+    font-size:1.5em;
 }
 
 .freeYetiAppleText {
+    font-family:WorkSans;
+    font-weight:900;
     color:#34ba95;
+}
+
+.AlvAubText {
+    font-family:WorkSans;
+    color:#444444;
+    font-weight:500;
+    font-size:1.2em;
 }
 
 #registerBtn {
     background-color:#404042;
     color:white;
-    width:12em;
+    width:@button-width;
+    height:@button-height;
     padding:.75em;
     border:none;
-    border-radius: 5px;
+    border-radius: @button-border-radius;
+    font-family:Roboto;
 }
 
 .closeBtn {
@@ -81,7 +108,7 @@
 #modalBtn {
     background-color:#34ba95;
     width:12em;
-    font-family: Roboto-Condensed;
+    font-family: Roboto;
     padding:.75em;
     border: none;
     border-radius: 5px;
