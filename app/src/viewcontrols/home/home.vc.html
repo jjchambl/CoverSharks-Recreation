@@ -10,7 +10,6 @@
                 <plat-link plat-options="{ view: '/about', isUrl: true }">
                         <span>More Info</span>
                 </plat-link>
-                <!--<plat-button>More Info</plat-button>-->
             </div>             
             <div class="col-dsk-4 col-dsk-offset-1 hide-on-tab">
                 <img src="images/home_assets/hero-phone.png">
@@ -30,7 +29,7 @@
                 <h4>REGISTER NOW FOR A CHANCE TO WIN A</h4>
                 <h2>FREE YETI COOLER or APPLE WATCH</h2>
                 
-                <plat-button id="registerBtn" class="button-primary" plat-tap="toggleModal()">Register</plat-button>
+                <plat-button plat-tap="toggleModal()">Register</plat-button>
             </div>
             
             <plat-modal plat-options="{ transition: 'fade' }" plat-bind="modal" class="modal-prompt">

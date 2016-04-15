@@ -8,6 +8,19 @@
     }
 }
 
+    //Less Variables
+    @button-width: 12em;
+    @button-height: 4em;
+    @button-border-radius: .5em;
+    @white: #ffffff;
+    @green: #34b994;
+    @black-button: #393a3c;
+    @light-blue: #3798c5;
+    @gray-background: #f2f3f4;
+    @dark-blue:#344b64;
+    @gray: #a6a8ab;
+    @dark-gray: #444444;
+    
 .promoHeader {
     height: 17em;
     background-image: url('/images/promotions_assets/promo-hero.jpg');
@@ -15,35 +28,59 @@
     background-position-x: center;
     background-position-y: 15%;
     text-align: center;
-    color: white;
+    color:@white;
     .promoTitle {
         padding-top: 2.25em;
-        color:#f2f3f4;
+        color:@gray-background;
         text-align:center;
+        font-family: WorkSans;
+        font-weight: 100;
     }
 }
 .promoText, .promoImg {
     padding-top: 3em;
     padding-left: 4em;
     padding-bottom: 3em;
-    text-align: center;
+    // text-align: center;
 }
 
-.registerNowText, .throughDateText {
-    color:#444444;
+.registerNowText {
+    font-family:Roboto;
+    font-weight:bold;
+    color:@dark-gray;
+    font-size:2em;
+}
+
+.throughDateText {
+    font-family:Roboto;
+    font-weight:bold;
+    color:@dark-gray;
+    font-size:1.5em;
 }
 
 .freeYetiAppleText {
-    color:#34ba95;
+    font-family:WorkSans;
+    font-weight:900;
+    color:@green;
+}
+
+.AlvAubText {
+    font-family:WorkSans;
+    color:@dark-gray;
+    font-weight:500;
+    font-size:1.2em;
 }
 
 #registerBtn {
     background-color:#404042;
-    color:white;
-    width:12em;
+    color:@white;
+    width:@button-width;
+    height:@button-height;
     padding:.75em;
     border:none;
-    border-radius: 5px;
+    border-radius: @button-border-radius;
+    font-family:Roboto;
+    font-size:1.2em;
 }
 
 .closeBtn {
@@ -60,7 +97,9 @@
 
 .modalTitle {
     text-align:center;
-    color:#2d97d2;
+    color:@light-blue;
+    font-family: Roboto;
+    font-size:1.2em;
 }
 
 .modalInput {
@@ -68,22 +107,24 @@
     padding: 1em;
     margin-bottom: 1em;
     border-radius: 5px;
-    border: #ffffff;
+    border: @white;
 }
 
 .modalSelect {
     width:25em;
     padding:3em;
     border-radius: 5px;
-    border: #ffffff;
+    border: @white;
 }
 
 #modalBtn {
-    background-color:#34ba95;
-    width:12em;
-    font-family: Roboto-Condensed;
+    background-color:@green;
+    width:@button-width;
+    height:@button-height;
+    font-family: Roboto;
     padding:.75em;
     border: none;
-    border-radius: 5px;
+    border-radius: @button-border-radius;
+    font-size:1.1em;
 }
 
