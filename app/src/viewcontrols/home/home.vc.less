@@ -7,9 +7,17 @@
 
     }
     
-    @button-border-radius: 5px;
+    @button-border-radius: .5em;
     @button-width: 12em;
     @button-height: 4em;
+    @white: #ffffff;
+    @green: #34b994;
+    @black-button: #393a3c;
+    @light-blue: #3798c5;
+    @gray-background: #f2f3f4;
+    @dark-blue:#344b64;
+    @gray: #a6a8ab;
+    @transition-duration: .5s;
     
     .home-container{
         position: relative;
@@ -21,28 +29,28 @@
         background-size: cover;
         text-align: center;
         width: 100%;        
-        color: white;
+        color: @white;
         margin: 0;
         padding: 0;
         h1 {
             font-family: WorkSans;
-            font-weight: bolder;
+            font-weight: 900;
             text-transform: uppercase;
             padding: .5em .5em;
             margin: 2em 0 0;
             background-color: #2798ca;            
-            color: white;
+            color: @white;
         }
         p {
             font-family: WorkSans;
             padding: 0 1.2em 0 1.2em;
             text-align: left;
-            color: white;
+            color: @white;
         }
         mobile-p {
             width: 75%;
             text-transform: uppercase;
-            color: white;
+            color: @white;
         }
         img {
             height: 25em;
@@ -52,19 +60,15 @@
         }
         a {
             font-family: Roboto;
-            padding: @button-height * .3 @button-width * .3;
+            padding: @button-height * .25 @button-width * .25;
             border-radius: @button-border-radius;
-            background-color: #ffffff;
-            color: black;
-            text-transform: uppercase; 
-        }
-        button {
-            width: @button-width;
-            height: @button-height;
-            border-radius: @button-border-radius;
-            background-color: #ffffff;
+            background-color: @white;
             color: black;
             text-transform: uppercase;
+            &:hover {
+                background-color: darken(@white, 25%);
+                transition-duration: @transition-duration;
+            } 
         }
     }
     
@@ -74,10 +78,12 @@
         h4 {
             font-family: Roboto;
             font-weight: bold;
+            color: gray;
         }
         h2{
             font-family: WorkSans;
-            font-weight: bolder;
+            font-weight: 900;
+            color: #34b994;
         }
         img {
             height: 25em;
@@ -88,10 +94,14 @@
             width: @button-width;
             height: @button-height;
             border-radius: @button-border-radius;
-            background-color:#404042;
+            background-color: @black-button;
             color:white;
             text-transform: uppercase;
-            margin-bottom: 1em;        
+            margin-bottom: 1em;  
+            &:hover {
+                background-color: lighten(@black-button, 20%);
+                transition-duration: @transition-duration;
+            }      
         }
     }
     .choose {
@@ -102,7 +112,7 @@
         h1 {
             color: #2798ca;
             font-family: WorkSans;
-            font-weight: bolder;
+            font-weight: 900;
         }
         p {
             color: white;
@@ -114,7 +124,7 @@
         }
         a {
             font-family: Roboto;
-            padding: @button-height * .3 @button-width * .3;
+            padding: @button-height * .25 @button-width * .25;
             border-radius: @button-border-radius;
             background-color: #ffffff;
             color: black;
@@ -137,7 +147,7 @@
         h1 {
             color: #2798ca;
             font-family: WorkSans;
-            font-weight: bolder;
+            font-weight: 900;
         }
         .panel {
             border-top: 1px solid black;
