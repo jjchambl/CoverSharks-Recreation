@@ -19,6 +19,10 @@
     @gray: #a6a8ab;
     @transition-duration: .5s;
     
+    .nav-font-color (background-color) when (Lightness(background-color)>=50%) {
+        color: @white;
+    }
+    
     button {
         font-family: Roboto;
         // &:hover {

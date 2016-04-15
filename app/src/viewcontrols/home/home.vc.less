@@ -19,6 +19,8 @@
     @gray: #a6a8ab;
     @transition-duration: .5s;
     
+    
+    
     .home-container{
         position: relative;
         padding-top: 3.2em;
@@ -78,7 +80,7 @@
         h4 {
             font-family: Roboto;
             font-weight: bold;
-            color: gray;
+            color: @gray;
         }
         h2{
             font-family: WorkSans;
@@ -126,17 +128,13 @@
             font-family: Roboto;
             padding: @button-height * .25 @button-width * .25;
             border-radius: @button-border-radius;
-            background-color: #ffffff;
+            background-color: @white;
             color: black;
             text-transform: uppercase;
-        }
-        button {
-            width: @button-width;
-            height: @button-height;
-            border-radius: @button-border-radius;
-            background-color:white;
-            color:black;
-            text-transform: uppercase; 
+            &:hover {
+                background-color: darken(@white, 25%);
+                transition-duration: @transition-duration;
+            } 
         }
     }
     .overview {
@@ -150,12 +148,11 @@
             font-weight: 900;
         }
         .panel {
-            border-top: 1px solid black;
-            border-left: 1px solid black;
-            border-right: 3px solid gray;
-            border-bottom: 3px solid gray;
-            border-radius: 1%;
+            border-right: 2px solid gray;
+            border-bottom: 2px solid gray;
+            border-radius: @button-border-radius;
             margin: .5em 2em;
+            background-color: @white;
             img {
                 width: 75%;
                 height: 50%;
@@ -163,6 +160,7 @@
                 padding: 0;
             }
             h5 {
+                font-size: 1.5em;
                 font-family: Roboto;
                 font-weight: bold;
                 padding: .5em 0;
@@ -170,7 +168,7 @@
             p {
                 font-family: WorkSans;
                 padding: .2em 2em;
-                color: gray;
+                color: @gray;
             }
         }
         .email-form {            
@@ -188,6 +186,18 @@
                 padding: 0;
                 text-align: center;
                 margin: auto 0 auto 0;
+            }
+            button {
+                font-family: Roboto;
+                border-radius: @button-border-radius;
+                height: @button-height;
+                width: @button-width;
+                background-color: @black-button;
+                color: @white;
+                &:hover {
+                    background-color: lighten(@black-button, 20%);
+                    transition-duration: @transition-duration;
+                }
             }
         }        
     }
