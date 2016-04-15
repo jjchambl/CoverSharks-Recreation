@@ -8,10 +8,11 @@
     }
 }
 
-    //Less Variables
+    //LESS Variables
     @button-width: 12em;
     @button-height: 4em;
     @button-border-radius: .5em;
+    @bold:bold;
     @white: #ffffff;
     @green: #34b994;
     @black-button: #393a3c;
@@ -20,6 +21,7 @@
     @dark-blue:#344b64;
     @gray: #a6a8ab;
     @dark-gray: #444444;
+    @dark-gray-btn:#404042;
     
 .promoHeader {
     height: 17em;
@@ -41,7 +43,6 @@
     padding-top: 3em;
     padding-left: 4em;
     padding-bottom: 3em;
-    // text-align: center;
 }
 
 .registerNowText {
@@ -72,7 +73,7 @@
 }
 
 #registerBtn {
-    background-color:#404042;
+    background-color:@dark-gray-btn;
     color:@white;
     width:@button-width;
     height:@button-height;
@@ -100,6 +101,7 @@
     color:@light-blue;
     font-family: Roboto;
     font-size:1.2em;
+    font-weight:@bold;
 }
 
 .modalInput {
