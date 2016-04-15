@@ -24,6 +24,14 @@
     background-position-y: 56%;
 }
 
+#getStartBttn {
+    color: #9e9f9e;
+}
+
+#videoBttn {
+    color: #9e9f9e;
+}
+
 #getStartIphone {
     height: 1em;
     // width: 2em;
@@ -64,6 +72,7 @@
             max-width: 24em;
             font-weight: bold;
             font-size: 1.5em;
+            color: #9e9f9e;
         }
      
                 input {
@@ -88,9 +97,11 @@
     margin-left: 21%;
     h4 {
         text-align: left;
+        color: #3798c5;
     }
         p {
-           text-align: left; 
+           text-align: left;
+           color: #9e9f9e; 
         }   
 }
 // changes are good above....finally....
@@ -118,7 +129,7 @@
     width: 3em;
     height: 3em;
     border-radius: 100%;
-    background-color: #38C4F2;
+    background-color: #3798c5;
     color: #ffffff;
     text-align: center;
     display: inline-block;
@@ -134,16 +145,23 @@
 .rule {
     margin-left: 17%;
     margin-right: 17%;
+    background-color: #9e9f9e;
 }
 
 .gamePlayItem p {
     margin-left: 17%;
     margin-right: 17%;
+    color: #9e9f9e;
 }
 
 #gamePlay .scorePointsWin {
     width: 19em;
     margin-left: 18%;
+    color: #3798c5;
+}
+
+#gamePlay .scorePointsWin p {
+    color: #9e9f9e;
 }
 
 #gamePlay .scorePointsWin h2 {
@@ -184,10 +202,6 @@
        margin-left: 0%;
    }
    
-//    .headers h3 {
-//     //    margin-top: 0em;
-//    }
-   
    .numbers {
        display: block;
        text-align: center;
@@ -209,8 +223,6 @@
    
    #scores {
        text-align: center;
-    //    margin-left: 17%;
-    //    margin-right: 17%;
    }
    
    #gamePlay .scorePointsWin {
@@ -251,12 +263,146 @@
     
     button {
         background: transparent;
-        hr {
-            margin-top: 0px;
-        }
     }
 }
 
-#contest div {
+// video styles
+
+#videoPage {
     text-align: center;
+    background-color: #f2f3f4;
+}
+
+#videoPage h3 {
+    color: #9e9f9e;
+}
+
+#videoPage h4 {
+    color: #3798c5;
+}
+
+#videoPage p {
+    color: #9e9f9e;
+}
+
+#contest div div {
+    text-align: center;
+    display: inline-block;
+    max-width: 100%;
+    background-color: #ffffff;       
+}
+
+#opponents div div {
+    text-align: center;
+    display: inline-block;
+    max-width: 100%;
+    background-color: #ffffff;
+}
+
+#games div div {
+    // margin-left: 12%;
+    display: inline-block;
+    max-width: 100%;
+    background-color: #ffffff;
+}
+
+#contest div div button {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#opponents div div button {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#games div div button {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.image {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+#seven {
+    margin-right: 6px;
+}
+
+#eight {
+    margin-left: 6px;
+}
+
+@media only screen and(max-width: 700px) {
+    
+    #videoPage {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    
+    #contest {
+        margin-top: 25px;
+    }
+    
+    #contest div div {
+        text-align: center;
+        display: block;
+        margin-top: 25px;
+    }
+    
+    #contest h3 {
+        text-align: center;
+        margin-left: 0;
+    }
+    
+    #opponents {
+        margin-top: 25px;
+    }
+    
+    #opponents div div {
+        text-align: center;
+        display: block;
+        margin-top: 25px;
+    }
+    
+    #opponents h3 {
+        text-align: center;
+        margin-left: 0;
+    }
+    
+    #games {
+        margin-top: 25px;
+    }
+    
+    #games div div {
+        text-align: center;
+        margin-left: 0;
+        display: block;
+        margin-top: 25px;
+    }
+    
+    #games h3 {
+        text-align: center;
+        margin-left: 0;
+    }
+    
+    .image {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    #seven {
+        margin-right: 0px;
+    }
+
+    #eight {
+        margin-left: 0px;
+    }
 }
