@@ -32,7 +32,7 @@
     text-align: center;
     color:@white;
     .promoTitle {
-        padding-top: 4em;
+        padding-top: 2.5em;
         color:@gray-background;
         text-align:center;
         font-family: WorkSans;
@@ -51,6 +51,7 @@
     padding-left: 4em;
     padding-bottom: 3em;
     max-width:100%;
+    
 }
 
 .registerNowText {
@@ -138,3 +139,8 @@
     font-size:1.1em;
 }
 
+@media only screen and (max-width: 768px) {
+    .promoHeader .promoTitle {
+        padding-top: 4em;
+    }
+}
