@@ -8,9 +8,18 @@
     }
 }
 
+    //Less Variables
     @button-width: 12em;
     @button-height: 4em;
     @button-border-radius: .5em;
+    @white: #ffffff;
+    @green: #34b994;
+    @black-button: #393a3c;
+    @light-blue: #3798c5;
+    @gray-background: #f2f3f4;
+    @dark-blue:#344b64;
+    @gray: #a6a8ab;
+    @dark-gray: #444444;
     
 .promoHeader {
     height: 17em;
@@ -19,10 +28,10 @@
     background-position-x: center;
     background-position-y: 15%;
     text-align: center;
-    color: white;
+    color:@white;
     .promoTitle {
         padding-top: 2.25em;
-        color:#f2f3f4;
+        color:@gray-background;
         text-align:center;
         font-family: WorkSans;
         font-weight: 100;
@@ -38,33 +47,33 @@
 .registerNowText {
     font-family:Roboto;
     font-weight:bold;
-    color:#444444;
+    color:@dark-gray;
     font-size:2em;
 }
 
 .throughDateText {
     font-family:Roboto;
     font-weight:bold;
-    color:#444444;
+    color:@dark-gray;
     font-size:1.5em;
 }
 
 .freeYetiAppleText {
     font-family:WorkSans;
     font-weight:900;
-    color:#34ba95;
+    color:@green;
 }
 
 .AlvAubText {
     font-family:WorkSans;
-    color:#444444;
+    color:@dark-gray;
     font-weight:500;
     font-size:1.2em;
 }
 
 #registerBtn {
     background-color:#404042;
-    color:white;
+    color:@white;
     width:@button-width;
     height:@button-height;
     padding:.75em;
@@ -88,7 +97,7 @@
 
 .modalTitle {
     text-align:center;
-    color:#2d97d2;
+    color:@light-blue;
     font-family: Roboto;
     font-size:1.2em;
 }
@@ -98,18 +107,18 @@
     padding: 1em;
     margin-bottom: 1em;
     border-radius: 5px;
-    border: #ffffff;
+    border: @white;
 }
 
 .modalSelect {
     width:25em;
     padding:3em;
     border-radius: 5px;
-    border: #ffffff;
+    border: @white;
 }
 
 #modalBtn {
-    background-color:#34ba95;
+    background-color:@green;
     width:@button-width;
     height:@button-height;
     font-family: Roboto;
