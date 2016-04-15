@@ -8,12 +8,15 @@
         <!--Space for the navbar to route between the getting started and the videos page-->
 
         <div id="tabNav">
-            <button   id="getStartBttn" class="plat-neutral videoBttn" plat-tap="startView()" plat-bind="getVideos">Getting Started</button> 
+            <button   id="getStartBttn" class="col-phn-6 plat-neutral videoBttn" plat-tap="startView()">Overview</button> 
             <!--plat-bind startView is really getVideos-->
-            <button   id="videoBttn" class="plat-neutral videoBttn" plat-tap="videoView()" plat-bind="getStart">Videos</button>
+            <button   id="videoBttn" class="col-phn-6 plat-neutral videoBttn" plat-tap="videoView()">Videos</button>
             <!--plat-bind videoView is really getStart-->
         </div>
         <!--end of the space for navbar-->
+<!--<br>
+<br>
+<br>-->
 <div plat-visible="{{getStart}}">
     <div class="row" id="getStartIphone">
     
@@ -83,7 +86,7 @@
                             each win, you<br/> accumulate points that can be redeemed.
                         </p>
                 </div>
-                <div id="whiteIphone" class="col-tab-6 hide-on-phn">
+                <div id="whiteIphone" class="col-dsk-6 hide-on-tab">
                     <img src="images/how-to-play_assets/getting-started_assets/phone2.png" alt="iPhone">
                 </div>
             </div>

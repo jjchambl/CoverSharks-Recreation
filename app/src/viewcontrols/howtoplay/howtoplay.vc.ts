@@ -28,8 +28,8 @@ export default class HowtoplayViewControl extends BaseViewControl {
         //     this.context.getStart = false;
         // }
         
-        this.context.getVideos = !this.context.getVideos,
-        this.context.getStart = !this.context.getStart;
+        this.context.getVideos = false,
+        this.context.getStart = true;
         
         console.log(`start: ${this.context.getStart}, videos: ${this.context.getVideos}`);
     }
@@ -47,8 +47,8 @@ export default class HowtoplayViewControl extends BaseViewControl {
         //     this.context.getVideos = true;
         // }
         
-        this.context.getStart = !this.context.getStart,
-        this.context.getVideos = !this.context.getVideos;
+        this.context.getStart = false,
+        this.context.getVideos = true;
         
         
         console.log(`start: ${this.context.getStart}, videos: ${this.context.getVideos}`);
