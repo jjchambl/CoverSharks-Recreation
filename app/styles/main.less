@@ -24,6 +24,18 @@
         background-color: #ffffff;
         border: 0;
         padding: 0;
+        height: 100%;
+        position: relative;
+
+        .scroller {
+            height: 100%;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            
+            .main-viewport {
+                height: auto;
+            }
+        }
     }
     button {
         font-family: Roboto;
