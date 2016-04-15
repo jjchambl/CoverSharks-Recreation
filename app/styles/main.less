@@ -16,6 +16,13 @@
     @blue-footer-font:#344b64;
     @blue-box: #3798c5;
     
+    button {
+        font-family: Roboto;
+    }
+    plat-button {
+        font-family: Roboto;
+    }
+    
     .app {
         // height: 100%;
         width: 100%;
@@ -64,8 +71,6 @@
                 line-height: 100px;
                 text-align: center;
             }
-        }
-        
     }
     
     // Navbar
@@ -174,7 +179,7 @@
         margin: 0;
         padding: 0;
         .footer-logo {
-            margin-top: @margin;
+            // margin-top: @margin;
             height: 40%;
             img {
                 width: 40%;
@@ -182,7 +187,7 @@
         }
         .soc-media-footer {
             height: 40%;
-            margin-top: @margin;
+            // margin-top: @margin;
             img {
                 width: 10%;
                 height: 1.5em;
@@ -227,7 +232,7 @@
                 padding: 0;
             }
         }
-    } 
+    }
     
     //About Page
         .aboutHeader {
@@ -240,6 +245,8 @@
             color: white;
             h1 {
                 padding-top: 2.25em;
+                // font-family: Roboto;
+                // font-weight: thin;
             }
         }
 
@@ -248,34 +255,43 @@
             margin-bottom: 3em;
             h1 {
                 color: #00b786;
+                font-family: WorkSans;
+                font-weight: bolder;
             }
             p {
                 color: #9e9f9e;
+                font-family: Roboto;
             }
         }
 
-        .container {
+        .about-container {
             text-align: center;
             p {
                 color: #9e9f9e;
                 padding-bottom: 3em;
+                font-family: Roboto;
             }
             h1 {
                 color: #00b786;
+                font-family: WorkSans;
+                font-weight: bolder;
             }
         }
 
         .origin {
             padding-left: 0.5em;
+            font-family: WorkSans;
             h3 {
                 color: #9e9f9e;
                 margin-top: 0.25em;
                 margin-bottom: 0.25em;
+                font-weight: bolder;
             }
             h2 {
                 color: #343534;
                 padding-top: 0.1em;
                 margin-bottom: 0.25em;
+                font-weight: bolder;
             }
         }
 
@@ -295,6 +311,7 @@
             p {
                 color: white;
                 margin-bottom: 0.5em;
+                font-family: Roboto;
             }
         }
 
@@ -308,12 +325,15 @@
             padding-bottom: 4em;
             p {
                 padding: 1em;
+                font-family: WorkSans;
             }
         }
 
         .jobTitle {
             background-color: #3798c5;
             border-radius: 1em 1em 0 0;
+            font-family: WorkSans;
+            font-weight: bolder;
             h3 {
                 color: white;
                 text-align: center;
@@ -338,7 +358,6 @@
         .press {
             width: 12em;
             display: inline-block;
-            font-family: Roboto-Condensed;
             background-color: #343534;
             border-radius: 0.5em;
             color: white;
@@ -346,6 +365,7 @@
         }
 
         .email {
+            font-family: WorkSans;
             width: 23em;
             background-color: white;
             border-radius: 0.5em;
@@ -381,8 +401,7 @@
         .content {
             margin-left: auto;
             margin-right: auto;
-        }   
-}
+        }
 
     //Promotions Page
         .promoHeader {
@@ -424,11 +443,11 @@
         }
 
         .closeBtn {
-        position: fixed;
-        right: 5%;
-        top: 3%;
-        background-color: transparent;
-        border: none;
+            position: fixed;
+            right: 5%;
+            top: 3%;
+            background-color: transparent;
+            border: none;
         }
 
         .closeBtn:hover {
@@ -463,6 +482,8 @@
             border: none;
             border-radius: 5px;
         }
+    }
+}
 
 @import '../src/templatecontrols/footer/footer.tc.less';
 @import '../src/templatecontrols/navbar/navbar.tc.less';

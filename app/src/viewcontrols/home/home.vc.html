@@ -1,4 +1,4 @@
-<div class="container">
+<div class="home-container">
  <div class="data">
         <div class="row">
             <div class="col-dsk-5 col-dsk-offset-1 col-tab-10 col-tab-offset-1">
@@ -6,9 +6,12 @@
                 <p >Data, analytics, skill, and strategy. All in the ultimate in-game experience. CoverSharks is primed to be the industry pioneer in a new genre
                     of game play...Team Fantasy Sports.
                 </p>
-                <!--<p class="mobile-p hide-above-phb">Data analytics, skill, and strategy. All in the ultimate in-game experience.</p>-->
-                <plat-button>More Info</plat-button>
-            </div>
+                <br>           
+                <plat-link plat-options="{ view: '/about', isUrl: true }">
+                        <span>More Info</span>
+                </plat-link>
+                <!--<plat-button>More Info</plat-button>-->
+            </div>             
             <div class="col-dsk-4 col-dsk-offset-1 hide-on-tab">
                 <img src="images/home_assets/hero-phone.png">
             </div>
@@ -20,15 +23,38 @@
     
     <div class="yeti">
         <div class="row">
-            <div class="col-tab-3 col-dsk-2 hide-on-phb">
+            <div class="col-dsk-3 hide-on-tab">
                 <img src="images/home_assets/apple-watch-and-yeti-image.png">
             </div>            
-            <div class="col-tab-5 col-tab-offset-4 col-dsk-6">
+            <div class="col-dsk-5 col-dsk-offset-4">
                 <h4>REGISTER NOW FOR A CHANCE TO WIN A</h4>
                 <h2>FREE YETI COOLER or APPLE WATCH</h2>
+                
                 <plat-button id="registerBtn" class="button-primary" plat-tap="toggleModal()">Register</plat-button>
             </div>
-            <div class="col-phn-12 hide-above-phb">
+            
+            <plat-modal plat-options="{ transition: 'fade' }" plat-bind="modal" class="modal-prompt">
+            
+                <div class="prompt-body">
+                    <span class="closeBtn" plat-tap="toggleModal()">X</span>
+                    <p class="modalTitle"><b>Please enter your registration information:</p>
+                    <input class="modalInput" type="text" placeholder="First Name">
+                    <input class="modalInput" type="text" placeholder="Last Name">
+                    <input class="modalInput" type="text" placeholder="Email">
+                    <input class="modalInput" type="text" placeholder="Zip Code">
+                    <select class="modalSelect" name="dropdownModal" placeholder="Favorite Team" id="">
+                        <option value="Favorite Team" placeholder="Favorite Team"></option>
+                        <option value="Alabama">Alabama</option>
+                        <option value="Auburn">Auburn</option>
+                    </select>
+                    <p>Enter the above text fields and click register to enter the Free Yeti Cooler or Apple Watch Promotion. This promotion runs through April 17. You will recieve a confirmation email after you registration has been processed.</p>
+                </div>
+                <div class="prompt-action">
+                    <plat-button id="modalBtn" class="button-primary" plat-tap="toggleModal()">REGISTER</plat-button>
+                </div>
+            </plat-modal>
+            
+            <div class="col-tab-12 hide-above-tab">
                 <img src="images/home_assets/apple-watch-and-yeti-image.png">
             </div>
         </div>
@@ -36,54 +62,26 @@
     
     <div class="choose">
         <div class="row">
-            <div class="col-tab-5 col-tab-offset-1 col-phb-10 col-phb-offset-1">
+            <div class="col-dsk-5 col-dsk-offset-1 col-tab-10 col-tab-offset-1">
                 <h1>Choose How You Want to Play.</h1>
                 <p>Do you want to compete alongside your favorite teams? Do you follow the entire nation or a specific conference
                     or region of the country? CoverSharks gives you the option to customize your play with our unique format of games that
                     suits your personal preferences.
                 </p>
-                <plat-button>How to Play</plat-button>
+                <br>
+                <plat-link plat-options="{ view: '/howtoplay', isUrl: true }">
+                    <span>How to Play</span>
+                </plat-link>
+                <!--<plat-button>How to Play</plat-button>-->
             </div>
-            <div class="col-tab-5 hide-on-phb">
+            <div class="col-dsk-4 col-dsk-offset-1 hide-on-tab">
                 <img src="images/home_assets/tilted-phone.png">
             </div>
         </div>
     </div>
     
     <div class="overview">
-        <h1>Overview of Game Play</h1>
-        
-        <!--Mobile Overview-->
-        <!--<div class="row hide-above-phb mobile-overview">
-            <div class="col-phn-12">
-                <img src="images/home_assets/app-image-1-01.png">
-            </div>
-            <div class="col-phn-8 col-phn-offset-2">
-                <h3>In-Game Experience</h3>
-            </div>
-            <div class="col-phn-10 col-phn-offset-1">
-                <p>Scores of each game are updated in real-time to offer players the ultimate in-Game experience.</p>
-            </div>
-            <div class="col-phn-12">
-                <img src="images/home_assets/app-image-2-04.png">
-            </div>
-             <div class="col-phn-8 col-phn-offset-2">
-                <h3>Data and Analytics</h3>
-            </div>
-            <div class="col-phn-10 col-phn-offset-1">
-                <p>As an integral part of game play, CoverSharks offers players a wide variety of real-time data and analytics.</p>
-            </div> 
-            <div class="col-phn-12">
-                <img src="images/home_assets/app-image-3-05.png">
-            </div>
-             <div class="col-phn-8 col-phn-offset-2">
-                <h3>Skill and Strategy</h3>
-            </div>
-            <div class="col-phn-10 col-phn-offset-1">
-                <p>Game odds are updated daily in real-time giving players an added level of skill and strategy.</p>
-            </div>            
-        </div>-->
-        
+        <h1>Overview of Game Play</h1>        
         <!--Desktop Overview-->
         <div class="row">
             <div class="col-dsk-4 ">
@@ -92,6 +90,7 @@
                     <p>In-Game Experience</p>
                     <p>Scores of each game are updated in real-time to offer players the ultimate in-Game experience.</p>
                 </div>
+                <hr class="hide-above-tab">
             </div>
             <div class="col-dsk-4">
                 <div class="panel">
@@ -99,6 +98,7 @@
                     <p>Data and Anaytics</p>
                     <p>As an integral part of game play, CoverSharks offers players a wide variety of real-time data and analytics.</p>
                 </div>
+                <hr class="hide-above-tab">
             </div>
             <div class="col-dsk-4">
                 <div class="panel">                           
@@ -106,7 +106,14 @@
                     <p>Skill and Strategy</p>
                     <p>Game odds are updated daily in real-time giving players an added level of skill and strategy.</p>
                 </div>
+                <hr class="hide-above-tab">
             </div>
+        </div>
+        <div class="email-form">
+            <h4>Enter your email to receive updates about CoverSharks</h4>
+            <input type="text" class="email" placeholder="Email" align="center">
+            <br>
+            <plat-button class="press" align="center">SUBSCRIBE</plat-button>
         </div>
     </div>
 </div>
