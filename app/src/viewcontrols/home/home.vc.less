@@ -148,11 +148,12 @@
             font-weight: 900;
         }
         .panel {
-            border-right: 2px solid gray;
-            border-bottom: 2px solid gray;
+            border-right: 2px solid @gray;
+            border-bottom: 2px solid @gray;
             border-radius: @button-border-radius;
             margin: .5em 2em;
             background-color: @white;
+            padding-bottom: .5em;
             img {
                 width: 75%;
                 height: 50%;
@@ -163,11 +164,10 @@
                 font-size: 1.5em;
                 font-family: Roboto;
                 font-weight: bold;
-                padding: .5em 0;
+                padding: .25em 0;
             }
             p {
                 font-family: WorkSans;
-                padding: .2em 2em;
                 color: @gray;
             }
         }
@@ -186,6 +186,7 @@
                 padding: 0;
                 text-align: center;
                 margin: auto 0 auto 0;
+                width: 60%;
             }
             button {
                 font-family: Roboto;

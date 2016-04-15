@@ -61,7 +61,7 @@
         max-width: 68%;
     }
 }
-
+// Start of the stylings for subcribe section
 #appSoon {
     display: table-cell;
     padding-left: 8%;
@@ -99,7 +99,9 @@
                         }
                     }
 }
+// End of the subscribe section
 
+// The two lines of text underneath the subcribe button
 #midPage {
     margin-left: 21%;
     h4 {
@@ -115,7 +117,8 @@
            font-weight: bold; 
         }   
 }
-// changes are good above....finally....
+// end on the two lines beneath the subcribe button
+// Numbers 1-4 listing sytles
 #gamePlay {
     background-color: #f2f3f4;
     h1 {
@@ -189,9 +192,15 @@
     margin-top: 3em;
     text-align: center;
 }
-// so far so good......
+// End of numbers 1-4 list styles
 
+// Overview style changes converting to moblie
 @media only screen and(max-width: 768px) {
+   
+   #htpTop h1 {
+       padding-top: 4em;
+   }
+   
    #appSoon {
        text-align: center;
        padding-left: 0%;
@@ -217,7 +226,7 @@
        margin-top: 0%;
        margin-bottom: 14px;
    }
-   
+//    stylings for the 
    .headers {
        display: block;
        text-align: center;
@@ -236,7 +245,6 @@
    
    #gamePlay .scorePointsWin h2 {
        text-align: center;
-    //    margin-left: 14%;
        max-width: 26em;
        margin-top: 0px;
    }
@@ -247,7 +255,6 @@
    
    #scores {
        text-align: center;
-    //    margin-top: 0px;
    }
    
    #gamePlay .scorePointsWin {
@@ -256,19 +263,9 @@
        text-align: center;
    }
    
-//    #whiteIphone {
-//        text-align: center;
-//    }
-   
-   #getStartIphone {
+    #getStartIphone {
        text-align: center;
    }
-   
-//    #getStartIphone h2 {
-//        margin-left: 0%;
-//        display: block;
-//        width: 100%;
-//     }
    
    #dskViewPhone img {
        margin-left: 0%;
@@ -290,11 +287,10 @@
         padding-left: 0%;
     }    
 }
+// End of style changes converting to mobile
 
+// These styles are to make the transition from dsk view to mobile view smoother
 @media only screen and(max-width: 948px){
-    // #whiteIphone {
-    //     text-align: center;
-    // }
     
     #getStartIphone {
         text-align: center;
@@ -309,7 +305,6 @@
     
     #gamePlay .scorePointsWin h2 {
        text-align: center;
-    //    margin-left: 14%;
        max-width: 26em;
        margin-top: 0px;
    }
@@ -333,10 +328,11 @@
     #appSoon {
         padding-left: 0%;
     }
-} 
+}
+// End of styles to smooth the transition
 
 //  videos page 
-
+// Buttons associated with the stylings for buttons in navTab
 .videoBttn {
     background: transparent;
     border-style: none;
@@ -375,10 +371,10 @@
 #tabNav button {
         background: transparent;
 }
-
+// End of the styles for the navTab buttons
 
 // video styles
-
+// The styles associated with the videos page and the buttons for coming soon
 #videoPage {
     text-align: center;
     background-color: #f2f3f4;
@@ -403,28 +399,30 @@
 #videoPage button {
     font-family: Roboto;
 }
-
+// first row of videos
 #contest div div {
     text-align: center;
     display: inline-block;
     max-width: 100%;
-    background-color: #feffff;       
+    background-color: #feffff;
+    border-bottom: solid 2px #9e9f9e;       
 }
-
+// second row of videos
 #opponents div div {
     text-align: center;
     display: inline-block;
     max-width: 100%;
     background-color: #feffff;
+    border-bottom: solid 2px #9e9f9e;
 }
-
+// third row of videos
 #games div div {
-    // margin-left: 12%;
     display: inline-block;
     max-width: 100%;
     background-color: #feffff;
+    border-bottom: solid 2px #9e9f9e;
 }
-
+// first row of videos buttons
 #contest div div button {
     margin-bottom: 20px;
     border-radius: 5px;
@@ -432,97 +430,107 @@
     color: #ffffff;
     font-family: Roboto;
 }
-
+// second row of videos buttons
 #opponents div div button {
     margin-bottom: 20px;
     border-radius: 5px;
     background-color: #393a3c;
     color: #ffffff;
 }
-
+// third row of videos buttons
 #games div div button {
     margin-bottom: 20px;
     border-radius: 5px;
     background-color: #393a3c;
     color: #ffffff;
 }
-
+// adjustments made for the even spacing down the middle of video divs
 .image {
     margin-left: 12px;
     margin-right: 12px;
 }
-
+// spacing for the second to last video div
 #seven {
     margin-right: 6px;
 }
-
+// spacing for the last video div
 #eight {
     margin-left: 6px;
 }
+// End of video styles on main view
 
+// video alignment in tablet view
+@media only screen and(max-width: 775px) {
+    .imagez {
+        margin-top: 25px;
+    }
+}
+
+// Style adjustments for sizing to mobile view
 @media only screen and(max-width: 768px) {
-    
+    //provides grey background on left and right of mobile view
     #videoPage {
         padding-right: 40px;
         padding-left: 40px;
     }
-    
+    // spacing to provide grey back ground for titles on first videos
     #contest {
         margin-top: 25px;
     }
-    
+    // aligning elements correctly in the video divs of the first row of videos
     #contest div div {
         text-align: center;
         display: block;
         margin-top: 25px;
     }
-    
+    // aligning titles to sit correctly in middle of provided space
     #contest h3 {
         text-align: center;
         margin-left: 0;
     }
-    
+    // spacing to provide grey back ground for titles on second videos
     #opponents {
         margin-top: 25px;
     }
-    
+    // aligning elements correctly in the video divs of the second row of videos
     #opponents div div {
         text-align: center;
         display: block;
         margin-top: 25px;
     }
-    
+    // aligning titles to sit correctly in middle of provided space
     #opponents h3 {
         text-align: center;
         margin-left: 0;
     }
-    
+    // spacing to provide grey back ground for titles on third videos
     #games {
         margin-top: 25px;
     }
-    
+    // aligning elements correctly in the video divs of the third row of videos
     #games div div {
         text-align: center;
         margin-left: 0;
         display: block;
         margin-top: 25px;
     }
-    
+    // aligning titles to sit correctly in middle of provided space
     #games h3 {
         text-align: center;
         margin-left: 0;
     }
-    
+    // reseting divs to align correct
     .image {
         margin-left: 0px;
         margin-right: 0px;
     }
-
+    // reseting divs to align correct
     #seven {
         margin-right: 0px;
     }
-
+    // reseting divs to align correct
     #eight {
         margin-left: 0px;
     }
 }
+// End of adjustments for sizing to mobile view
