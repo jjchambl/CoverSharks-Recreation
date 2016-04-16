@@ -383,6 +383,7 @@
 #videoPage h3 {
     color: #9e9f9e;
     font-family: Roboto;
+    padding-top: 1em;
 }
 
 #videoPage h4 {
@@ -399,29 +400,38 @@
 #videoPage button {
     font-family: Roboto;
 }
+
+.video-panel {
+    text-align: center;
+    display: inline-block;
+    max-width: 100%;
+    background-color: white;
+    border-bottom: solid 2px #9e9f9e;    
+    margin: 1em 0;
+}
 // first row of videos
-#contest div div {
-    text-align: center;
-    display: inline-block;
-    max-width: 100%;
-    background-color: #feffff;
-    border-bottom: solid 2px #9e9f9e;       
-}
+// #contest div div {
+//     text-align: center;
+//     display: inline-block;
+//     max-width: 100%;
+//     background-color: #feffff;
+//     border-bottom: solid 2px #9e9f9e;       
+// }
 // second row of videos
-#opponents div div {
-    text-align: center;
-    display: inline-block;
-    max-width: 100%;
-    background-color: #feffff;
-    border-bottom: solid 2px #9e9f9e;
-}
-// third row of videos
-#games div div {
-    display: inline-block;
-    max-width: 100%;
-    background-color: #feffff;
-    border-bottom: solid 2px #9e9f9e;
-}
+// #opponents div div {
+//     text-align: center;
+//     display: inline-block;
+//     max-width: 100%;
+//     background-color: #feffff;
+//     border-bottom: solid 2px #9e9f9e;
+// }
+// // third row of videos
+// #games div div {
+//     display: inline-block;
+//     max-width: 100%;
+//     background-color: #feffff;
+//     border-bottom: solid 2px #9e9f9e;
+// }
 // first row of videos buttons
 #contest div div button {
     margin-bottom: 20px;
@@ -477,22 +487,30 @@
 }
 
 // Style adjustments for sizing to mobile view
-@media only screen and(max-width: 768px) {
+@media only screen and(max-width: 900px) {
+    
+    .video-panel {
+        text-align: center;
+        background-color: white;
+        width: 80%;
+    }
+    
     //provides grey background on left and right of mobile view
     #videoPage {
         padding-right: 40px;
         padding-left: 40px;
+        padding-bottom: 3em;
     }
     // spacing to provide grey back ground for titles on first videos
     #contest {
         margin-top: 25px;
     }
     // aligning elements correctly in the video divs of the first row of videos
-    #contest div div {
-        text-align: center;
-        display: block;
-        margin-top: 25px;
-    }
+    // #contest div div {
+    //     text-align: center;
+    //     display: block;
+    //     margin-top: 25px;
+    // }
     // aligning titles to sit correctly in middle of provided space
     #contest h3 {
         text-align: center;
@@ -503,11 +521,11 @@
         margin-top: 25px;
     }
     // aligning elements correctly in the video divs of the second row of videos
-    #opponents div div {
-        text-align: center;
-        display: block;
-        margin-top: 25px;
-    }
+    // #opponents div div {
+    //     text-align: center;
+    //     display: block;
+    //     margin-top: 25px;
+    // }
     // aligning titles to sit correctly in middle of provided space
     #opponents h3 {
         text-align: center;
@@ -518,12 +536,12 @@
         margin-top: 25px;
     }
     // aligning elements correctly in the video divs of the third row of videos
-    #games div div {
-        text-align: center;
-        margin-left: 0;
-        display: block;
-        margin-top: 25px;
-    }
+    // #games div div {
+    //     text-align: center;
+    //     margin-left: 0;
+    //     display: block;
+    //     margin-top: 25px;
+    // }
     // aligning titles to sit correctly in middle of provided space
     #games h3 {
         text-align: center;
